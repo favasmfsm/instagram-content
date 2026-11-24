@@ -1,0 +1,36 @@
+name: Daily Instagram post
+
+on:
+  schedule:
+    - cron: "30 13 * * *"   # 13:30 UTC = 7:00 PM IST, every day
+  workflow_dispatch:
+    inputs:
+      live:
+        description: "Actually publish (unticked = dry run)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: instagram-post
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: macos-latest   # has sips for PNG -> JPEG
+    env:
+      ACCOUNTS_JSON: ${{ secrets.ACCOUNTS_JSON }}
+      MODE: ${{ (github.event_name == 'schedule' || inputs.live) && '--live' || '' }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Git identity
+        run: |
+          git config user.name "instagram-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      - name: edtechsalesmaster
+        run: python3 post.py next edtechsalesmaster $MODE --daily
+      - name: thesalesfalcon
+        if: always()
+        run: python3 post.py next thesalesfalcon $MODE --daily
