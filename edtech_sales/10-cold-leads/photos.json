@@ -1,0 +1,23 @@
+{
+ "hook": {
+  "file": "photos/hook-ejhjSZKTeeg.jpg",
+  "name": "Roberto Cortese",
+  "profile": "https://unsplash.com/@robertocortese",
+  "page": "https://unsplash.com/photos/person-using-macbook-pro-on-white-table-ejhjSZKTeeg",
+  "id": "ejhjSZKTeeg"
+ },
+ "side": {
+  "file": "photos/side-Hx-4TbpsoIw.jpg",
+  "name": "Justin Morgan",
+  "profile": "https://unsplash.com/@justin_morgan",
+  "page": "https://unsplash.com/photos/black-pen-on-white-notebook-Hx-4TbpsoIw",
+  "id": "Hx-4TbpsoIw"
+ },
+ "band": {
+  "file": "photos/band-pEVjp7yIc2A.jpg",
+  "name": "Microsoft Copilot",
+  "profile": "https://unsplash.com/@microsoftcopilot",
+  "page": "https://unsplash.com/photos/person-working-on-laptop-at-a-wooden-desk-pEVjp7yIc2A",
+  "id": "pEVjp7yIc2A"
+ }
+}

@@ -1,0 +1,30 @@
+{
+ "hook": {
+  "file": "photos/hook-z1hePtraqbo.jpg",
+  "name": "Yegor Makarenko",
+  "profile": "https://unsplash.com/@photochel228",
+  "page": "https://unsplash.com/photos/women-reviewing-documents-in-workspace-z1hePtraqbo",
+  "id": "z1hePtraqbo"
+ },
+ "side": {
+  "file": "photos/side-BZDDD30RCEI.jpg",
+  "name": "engin akyurt",
+  "profile": "https://unsplash.com/@enginakyurt",
+  "page": "https://unsplash.com/photos/a-woman-with-her-chin-resting-on-her-hand-BZDDD30RCEI",
+  "id": "BZDDD30RCEI"
+ },
+ "band": {
+  "file": "photos/band-Rk-k1K2WIsc.jpg",
+  "name": "Frederick Shaw",
+  "profile": "https://unsplash.com/@dropfastcollective",
+  "page": "https://unsplash.com/photos/woman-presenting-to-class-with-whiteboard-and-projector-Rk-k1K2WIsc",
+  "id": "Rk-k1K2WIsc"
+ },
+ "bottom": {
+  "file": "photos/bottom-50comlI_39U.jpg",
+  "name": "Jakub \u017berdzicki",
+  "profile": "https://unsplash.com/@jakubzerdzicki",
+  "page": "https://unsplash.com/photos/someone-is-writing-in-a-notebook-with-checkboxes-50comlI_39U",
+  "id": "50comlI_39U"
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "hook": {
+  "file": "photos/hook-71ig274jGpw.jpg",
+  "name": "Microsoft Copilot",
+  "profile": "https://unsplash.com/@microsoftcopilot",
+  "page": "https://unsplash.com/photos/woman-working-on-laptop-on-bed-with-snacks-and-books-71ig274jGpw",
+  "id": "71ig274jGpw"
+ },
+ "band": {
+  "file": "photos/band-rioRNjC0FUk.jpg",
+  "name": "Ma\u0142gorzata Szuba",
+  "profile": "https://unsplash.com/@s0smile",
+  "page": "https://unsplash.com/photos/a-person-holding-a-cup-of-coffee-while-reading-a-book-rioRNjC0FUk",
+  "id": "rioRNjC0FUk"
+ },
+ "bottom": {
+  "file": "photos/bottom-6wdRuK7bVTE.jpg",
+  "name": "Neil Soni",
+  "profile": "https://unsplash.com/@neilsoniphotography",
+  "page": "https://unsplash.com/photos/silver-iphone-x-floating-over-open-palm-6wdRuK7bVTE",
+  "id": "6wdRuK7bVTE"
+ }
+}

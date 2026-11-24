@@ -1,0 +1,30 @@
+{
+ "hook": {
+  "file": "photos/hook-Cc-CQTUkbH0.jpg",
+  "name": "Mulberry Digital",
+  "profile": "https://unsplash.com/@mulberrydigital",
+  "page": "https://unsplash.com/photos/smiling-man-carrying-child-and-playing-Cc-CQTUkbH0",
+  "id": "Cc-CQTUkbH0"
+ },
+ "side": {
+  "file": "photos/side-W0pMGlPogow.jpg",
+  "name": "Annie Spratt",
+  "profile": "https://unsplash.com/@anniespratt",
+  "page": "https://unsplash.com/photos/woman-in-black-shirt-sitting-on-chair-W0pMGlPogow",
+  "id": "W0pMGlPogow"
+ },
+ "band": {
+  "file": "photos/band-4_mJ1TbMK8A.jpg",
+  "name": "Nathan Dumlao",
+  "profile": "https://unsplash.com/@nate_dumlao",
+  "page": "https://unsplash.com/photos/3-women-and-2-men-sitting-on-green-grass-field-during-daytime-4_mJ1TbMK8A",
+  "id": "4_mJ1TbMK8A"
+ },
+ "bottom": {
+  "file": "photos/bottom-PjoJga8EovQ.jpg",
+  "name": "Asterfolio",
+  "profile": "https://unsplash.com/@asterfolio",
+  "page": "https://unsplash.com/photos/person-holding-black-iphone-4-PjoJga8EovQ",
+  "id": "PjoJga8EovQ"
+ }
+}

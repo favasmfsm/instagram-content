@@ -1,0 +1,23 @@
+{
+ "hook": {
+  "file": "photos/hook-2SD8DfamuPA.jpg",
+  "name": "Brooke Balentine",
+  "profile": "https://unsplash.com/@brookebalentine",
+  "page": "https://unsplash.com/photos/family-reading-a-book-together-on-a-plain-background-2SD8DfamuPA",
+  "id": "2SD8DfamuPA"
+ },
+ "side": {
+  "file": "photos/side-I5sXsH0WqcE.jpg",
+  "name": "serjan midili",
+  "profile": "https://unsplash.com/@s_midili",
+  "page": "https://unsplash.com/photos/person-holding-white-printer-paper-I5sXsH0WqcE",
+  "id": "I5sXsH0WqcE"
+ },
+ "bottom": {
+  "file": "photos/bottom-aCgaTVGu8mw.jpg",
+  "name": "Manasvita S",
+  "profile": "https://unsplash.com/@manasvita",
+  "page": "https://unsplash.com/photos/2019-calendar-on-white-table-aCgaTVGu8mw",
+  "id": "aCgaTVGu8mw"
+ }
+}

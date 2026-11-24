@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <title>EdTech Sales Master mark</title>
+  <rect width="512" height="512" rx="112" fill="#0f1f3a"/>
+  <path d="M88 316C152 292 208 296 248 324V428C208 400 152 396 88 420Z" fill="#ffffff"/>
+  <path d="M264 324C304 296 360 292 424 316V420C360 396 304 400 264 428Z" fill="#e4ecf7"/>
+  <polyline points="112,256 200,188 264,228 384,112" fill="none" stroke="#ff6b1a" stroke-width="40" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="300,100 396,100 396,196" fill="none" stroke="#ff6b1a" stroke-width="40" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

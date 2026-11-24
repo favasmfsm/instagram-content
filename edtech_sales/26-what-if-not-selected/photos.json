@@ -1,0 +1,30 @@
+{
+ "hook": {
+  "file": "photos/hook-duitQgK0SxA.jpg",
+  "name": "Matt Antonioli",
+  "profile": "https://unsplash.com/@antoniolio",
+  "page": "https://unsplash.com/photos/woman-resting-her-head-on-her-right-hand-beside-table-with-opened-book-duitQgK0SxA",
+  "id": "duitQgK0SxA"
+ },
+ "side": {
+  "file": "photos/side-1M9eKsa0_TM.jpg",
+  "name": "LOGAN WEAVER | @LGNWVR",
+  "profile": "https://unsplash.com/@lgnwvr",
+  "page": "https://unsplash.com/photos/woman-in-black-and-white-long-sleeve-shirt-sitting-on-white-bed-1M9eKsa0_TM",
+  "id": "1M9eKsa0_TM"
+ },
+ "band": {
+  "file": "photos/band-WC7KIHo13Fc.jpg",
+  "name": "Juan Encalada",
+  "profile": "https://unsplash.com/@juanencalada",
+  "page": "https://unsplash.com/photos/man-in-denim-shirt-at-desk-WC7KIHo13Fc",
+  "id": "WC7KIHo13Fc"
+ },
+ "bottom": {
+  "file": "photos/bottom-QUQKrjxZ7hg.jpg",
+  "name": "Peter Muniz",
+  "profile": "https://unsplash.com/@petepxl",
+  "page": "https://unsplash.com/photos/woman-signing-document-at-table-QUQKrjxZ7hg",
+  "id": "QUQKrjxZ7hg"
+ }
+}

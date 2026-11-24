@@ -1,0 +1,30 @@
+{
+ "hook": {
+  "file": "photos/hook-aFJV58vjgx8.jpg",
+  "name": "kevin turcios",
+  "profile": "https://unsplash.com/@kevin_turcios",
+  "page": "https://unsplash.com/photos/man-in-black-hoodie-using-macbook-aFJV58vjgx8",
+  "id": "aFJV58vjgx8"
+ },
+ "side": {
+  "file": "photos/side-lwZkyaMsAmc.jpg",
+  "name": "Gadiel Lazcano",
+  "profile": "https://unsplash.com/@gadiellv",
+  "page": "https://unsplash.com/photos/man-in-blue-denim-jacket-wearing-black-framed-eyeglasses-lwZkyaMsAmc",
+  "id": "lwZkyaMsAmc"
+ },
+ "band": {
+  "file": "photos/band-Y125COCWeuQ.jpg",
+  "name": "Nick Fithen",
+  "profile": "https://unsplash.com/@nickfith",
+  "page": "https://unsplash.com/photos/two-men-sitting-beside-table-with-opened-book-Y125COCWeuQ",
+  "id": "Y125COCWeuQ"
+ },
+ "bottom": {
+  "file": "photos/bottom-SLy10dQcFsc.jpg",
+  "name": "Harkirt singh",
+  "profile": "https://unsplash.com/@harkirt13",
+  "page": "https://unsplash.com/photos/two-men-sitting-on-a-curb-looking-at-a-piece-of-paper-SLy10dQcFsc",
+  "id": "SLy10dQcFsc"
+ }
+}

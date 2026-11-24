@@ -1,0 +1,23 @@
+{
+ "hook": {
+  "file": "photos/hook-BCBGahg0MH0.jpg",
+  "name": "Yustinus Tjiuwanda",
+  "profile": "https://unsplash.com/@yustinustjiu",
+  "page": "https://unsplash.com/photos/students-reading-textbooks-in-classroom-BCBGahg0MH0",
+  "id": "BCBGahg0MH0"
+ },
+ "band": {
+  "file": "photos/band-ViEBSoZH6M4.jpg",
+  "name": "Chris Liverani",
+  "profile": "https://unsplash.com/@chrisliverani",
+  "page": "https://unsplash.com/photos/brown-pencil-on-equation-paper-ViEBSoZH6M4",
+  "id": "ViEBSoZH6M4"
+ },
+ "side": {
+  "file": "photos/side-3fiztRMJPr8.jpg",
+  "name": "Juan Hilario",
+  "profile": "https://unsplash.com/@juandre",
+  "page": "https://unsplash.com/photos/man-in-blue-crew-neck-shirt-wearing-black-framed-eyeglasses-holding-green-ceramic-mug-3fiztRMJPr8",
+  "id": "3fiztRMJPr8"
+ }
+}

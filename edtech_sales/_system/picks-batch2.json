@@ -1,0 +1,8 @@
+{"03-five-minute-rule": {"hook": ["_system/search5.json","callcenter",5], "side": ["_system/search4.json","smartphone",7], "band": ["_system/search4.json","office",8]},
+ "04-parent-call-script": {"hook": ["_system/search3.json","parent",9], "side": ["_system/search4.json","teenager",7], "band": ["_system/search4.json","family",1], "bottom": ["_system/search4.json","smartphone",10]},
+ "05-think-about-it": {"hook": ["_system/search4.json","thinking",8], "band": ["_system/search4.json","family",4], "bottom": ["_system/search4.json","calendar",9]},
+ "06-diagnose-before-pitch": {"hook": ["_system/search4.json","student",8], "side": ["_system/search4.json","conversation",7], "band": ["_system/search4.json","notebook",12]},
+ "07-upskilling-outcomes": {"hook": ["_system/search4.json","professional",9], "side": ["_system/search4.json","laptop",11]},
+ "08-results-proof": {"hook": ["_system/search4.json","graduation",9], "band": ["_system/search4.json","graduation",2], "side": ["_system/search4.json","smartphone",9], "bottom": ["_system/search4.json","smartphone",6]},
+ "09-whatsapp-mistakes": {"hook": ["_system/search4.json","whatsapp",7], "band": ["_system/search4.json","whatsapp",9], "side": ["_system/search4.json","evening",5]},
+ "10-cold-leads": {"hook": ["_system/search4.json","office",12], "side": ["_system/search4.json","notebook",2], "band": ["_system/search4.json","office",6]}}

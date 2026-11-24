@@ -1,0 +1,23 @@
+{
+ "hook": {
+  "file": "photos/hook-3dwyxqwfgtY.jpg",
+  "name": "Musemind UX Agency",
+  "profile": "https://unsplash.com/@musemindagency",
+  "page": "https://unsplash.com/photos/a-man-sitting-at-a-table-in-a-green-room-3dwyxqwfgtY",
+  "id": "3dwyxqwfgtY"
+ },
+ "side": {
+  "file": "photos/side-hgz7pZkQoQc.jpg",
+  "name": "Darya Ezerskaya",
+  "profile": "https://unsplash.com/@darya_ezerskaya",
+  "page": "https://unsplash.com/photos/a-close-up-of-a-person-holding-a-cell-phone-hgz7pZkQoQc",
+  "id": "hgz7pZkQoQc"
+ },
+ "band": {
+  "file": "photos/band-MChSQHxGZrQ.jpg",
+  "name": "Annie Spratt",
+  "profile": "https://unsplash.com/@anniespratt",
+  "page": "https://unsplash.com/photos/men-sitting-in-front-of-their-laptop-computer-MChSQHxGZrQ",
+  "id": "MChSQHxGZrQ"
+ }
+}

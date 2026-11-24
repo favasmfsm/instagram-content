@@ -1,0 +1,30 @@
+{
+ "hook": {
+  "file": "photos/hook-Yk3diwJhgpU.jpg",
+  "name": "Walling",
+  "profile": "https://unsplash.com/@walling",
+  "page": "https://unsplash.com/photos/black-and-silver-laptop-computer-beside-black-headphones-Yk3diwJhgpU",
+  "id": "Yk3diwJhgpU"
+ },
+ "side": {
+  "file": "photos/side-scZgf1cBPps.jpg",
+  "name": "Mushvig Niftaliyev",
+  "profile": "https://unsplash.com/@mushvig95",
+  "page": "https://unsplash.com/photos/a-man-sitting-in-front-of-a-laptop-computer-scZgf1cBPps",
+  "id": "scZgf1cBPps"
+ },
+ "band": {
+  "file": "photos/band-Qx7A7SChpnI.jpg",
+  "name": "Cherrydeck",
+  "profile": "https://unsplash.com/@cherrydeck",
+  "page": "https://unsplash.com/photos/people-collaborating-on-office-laptop-Qx7A7SChpnI",
+  "id": "Qx7A7SChpnI"
+ },
+ "bottom": {
+  "file": "photos/bottom-6BWFAPPWn-8.jpg",
+  "name": "Emmanuel Ikwuegbu",
+  "profile": "https://unsplash.com/@emmages",
+  "page": "https://unsplash.com/photos/a-man-wearing-headphones-standing-in-front-of-a-microphone-6BWFAPPWn-8",
+  "id": "6BWFAPPWn-8"
+ }
+}

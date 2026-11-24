@@ -1,0 +1,212 @@
+{
+ "21-first-30-seconds": {
+  "hook": [
+   "_system/search7.json",
+   "21-hook",
+   3
+  ],
+  "side": [
+   "_system/search7.json",
+   "21-side",
+   8
+  ],
+  "band": [
+   "_system/search7.json",
+   "28-hook",
+   9
+  ],
+  "bottom": [
+   "_system/search7.json",
+   "21-bottom",
+   2
+  ]
+ },
+ "22-other-institute-cheaper": {
+  "hook": [
+   "_system/search7.json",
+   "22-hook",
+   6
+  ],
+  "side": [
+   "_system/search7.json",
+   "22-side",
+   10
+  ],
+  "band": [
+   "_system/search7.json",
+   "25-band",
+   7
+  ],
+  "bottom": [
+   "_system/search7.json",
+   "22-bottom",
+   2
+  ]
+ },
+ "23-demo-no-shows": {
+  "hook": [
+   "_system/search7.json",
+   "23-hook",
+   1
+  ],
+  "side": [
+   "_system/search7.json",
+   "23-side",
+   9
+  ],
+  "band": [
+   "_system/search7.json",
+   "23-band",
+   10
+  ],
+  "bottom": [
+   "_system/search7.json",
+   "23-bottom",
+   7
+  ]
+ },
+ "24-join-next-year": {
+  "hook": [
+   "_system/search7.json",
+   "24-bottom",
+   5
+  ],
+  "side": [
+   "_system/search7.json",
+   "24-side",
+   4
+  ],
+  "band": [
+   "_system/search7.json",
+   "24-band",
+   2
+  ],
+  "bottom": [
+   "_system/search7.json",
+   "24-bottom",
+   1
+  ]
+ },
+ "25-droppers-repeaters": {
+  "hook": [
+   "_system/search7.json",
+   "25-hook",
+   10
+  ],
+  "side": [
+   "_system/search7.json",
+   "25-side",
+   6
+  ],
+  "band": [
+   "_system/search7.json",
+   "25-band",
+   6
+  ],
+  "bottom": [
+   "_system/search7.json",
+   "25-bottom",
+   9
+  ]
+ },
+ "26-what-if-not-selected": {
+  "hook": [
+   "_system/search7.json",
+   "22-side",
+   5
+  ],
+  "side": [
+   "_system/search7.json",
+   "22-side",
+   3
+  ],
+  "band": [
+   "_system/search7.json",
+   "26-band",
+   4
+  ],
+  "bottom": [
+   "_system/search7.json",
+   "26-bottom",
+   8
+  ]
+ },
+ "27-renewals-early": {
+  "hook": [
+   "_system/search7.json",
+   "27-hook",
+   1
+  ],
+  "side": [
+   "_system/search7.json",
+   "27-side",
+   10
+  ],
+  "bottom": [
+   "_system/search7.json",
+   "27-bottom",
+   2
+  ]
+ },
+ "28-call-reviews": {
+  "hook": [
+   "_system/search7.json",
+   "28-hook",
+   1
+  ],
+  "side": [
+   "_system/search7.json",
+   "28-side",
+   7
+  ],
+  "band": [
+   "_system/search7.json",
+   "28-band",
+   2
+  ],
+  "bottom": [
+   "_system/search7.json",
+   "28-bottom",
+   5
+  ]
+ },
+ "29-instagram-comments": {
+  "hook": [
+   "_system/search7.json",
+   "29-hook",
+   7
+  ],
+  "band": [
+   "_system/search7.json",
+   "29-band",
+   10
+  ],
+  "bottom": [
+   "_system/search7.json",
+   "29-bottom",
+   9
+  ]
+ },
+ "30-counsellor-day": {
+  "hook": [
+   "_system/search7.json",
+   "30-hook",
+   3
+  ],
+  "side": [
+   "_system/search7.json",
+   "30-side",
+   9
+  ],
+  "band": [
+   "_system/search7.json",
+   "30-band",
+   10
+  ],
+  "bottom": [
+   "_system/search7.json",
+   "30-bottom",
+   9
+  ]
+ }
+}

@@ -1,0 +1,30 @@
+{
+ "hook": {
+  "file": "photos/hook-fsltc8BKbRw.jpg",
+  "name": "Andrea Buccelli",
+  "profile": "https://unsplash.com/@andreabuccelli",
+  "page": "https://unsplash.com/photos/woman-in-black-academic-dress-holding-bouquet-of-flowers-fsltc8BKbRw",
+  "id": "fsltc8BKbRw"
+ },
+ "band": {
+  "file": "photos/band-oTglG1D4hRA.jpg",
+  "name": "RUT MIIT",
+  "profile": "https://unsplash.com/@rutmiit",
+  "page": "https://unsplash.com/photos/person-holding-black-academic-hat-oTglG1D4hRA",
+  "id": "oTglG1D4hRA"
+ },
+ "side": {
+  "file": "photos/side-Nf5fSqHm-iY.jpg",
+  "name": "abillion",
+  "profile": "https://unsplash.com/@abillion",
+  "page": "https://unsplash.com/photos/hand-holding-smartphone-with-food-app-Nf5fSqHm-iY",
+  "id": "Nf5fSqHm-iY"
+ },
+ "bottom": {
+  "file": "photos/bottom-Dilfan21P8o.jpg",
+  "name": "charlesdeluvio",
+  "profile": "https://unsplash.com/@charlesdeluvio",
+  "page": "https://unsplash.com/photos/man-in-white-top-holding-iphone-Dilfan21P8o",
+  "id": "Dilfan21P8o"
+ }
+}

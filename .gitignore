@@ -1,0 +1,12 @@
+# secrets - never commit
+accounts.json
+.env
+*.env
+
+# junk
+.DS_Store
+__pycache__/
+*.pyc
+
+# temporary JPEGs made at posting time
+.build/

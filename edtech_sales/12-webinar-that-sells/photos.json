@@ -1,0 +1,30 @@
+{
+ "hook": {
+  "file": "photos/hook-8TCkE5KoXQo.jpg",
+  "name": "Flipsnack",
+  "profile": "https://unsplash.com/@flipsnack",
+  "page": "https://unsplash.com/photos/a-woman-sitting-at-a-table-with-a-laptop-8TCkE5KoXQo",
+  "id": "8TCkE5KoXQo"
+ },
+ "side": {
+  "file": "photos/side-03wFmOPaTMA.jpg",
+  "name": "Ellie Ellien",
+  "profile": "https://unsplash.com/@ellienelie",
+  "page": "https://unsplash.com/photos/woman-in-white-shirt-using-macbook-pro-03wFmOPaTMA",
+  "id": "03wFmOPaTMA"
+ },
+ "band": {
+  "file": "photos/band-MSKqOpeNSt4.jpg",
+  "name": "Jake Weirick",
+  "profile": "https://unsplash.com/@weirick",
+  "page": "https://unsplash.com/photos/man-in-hoodie-MSKqOpeNSt4",
+  "id": "MSKqOpeNSt4"
+ },
+ "bottom": {
+  "file": "photos/bottom-nNMBa7Y1Ymk.jpg",
+  "name": "Priscilla Du Preez \ud83c\udde8\ud83c\udde6",
+  "profile": "https://unsplash.com/@priscilladupreez",
+  "page": "https://unsplash.com/photos/two-people-sitting-at-a-table-with-laptops-nNMBa7Y1Ymk",
+  "id": "nNMBa7Y1Ymk"
+ }
+}

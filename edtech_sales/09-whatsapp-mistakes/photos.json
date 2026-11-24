@@ -1,0 +1,23 @@
+{
+ "hook": {
+  "file": "photos/hook-uKdkh25_wc0.jpg",
+  "name": "Mika Baumeister",
+  "profile": "https://unsplash.com/@kommumikation",
+  "page": "https://unsplash.com/photos/person-holding-black-android-smartphone-uKdkh25_wc0",
+  "id": "uKdkh25_wc0"
+ },
+ "band": {
+  "file": "photos/band-YamtliLQg2o.jpg",
+  "name": "Ravi Sharma",
+  "profile": "https://unsplash.com/@ravinepz",
+  "page": "https://unsplash.com/photos/a-person-using-a-cell-phone-YamtliLQg2o",
+  "id": "YamtliLQg2o"
+ },
+ "side": {
+  "file": "photos/side-M2J9z2r8xzk.jpg",
+  "name": "Anastasya Borovkova",
+  "profile": "https://unsplash.com/@nastyanyaushka",
+  "page": "https://unsplash.com/photos/a-window-lit-up-at-night-with-trees-in-front-of-it-M2J9z2r8xzk",
+  "id": "M2J9z2r8xzk"
+ }
+}

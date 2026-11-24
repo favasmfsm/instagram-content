@@ -1,0 +1,30 @@
+{
+ "hook": {
+  "file": "photos/hook-iJfM5uaZ1N4.jpg",
+  "name": "Emil Widlund",
+  "profile": "https://unsplash.com/@emilwidlund",
+  "page": "https://unsplash.com/photos/womens-white-and-black-polka-dot-button-up-collared-shirt-iJfM5uaZ1N4",
+  "id": "iJfM5uaZ1N4"
+ },
+ "side": {
+  "file": "photos/side-jUh3oAczfak.jpg",
+  "name": "Colin Lloyd",
+  "profile": "https://unsplash.com/@onthesearchforpineapples",
+  "page": "https://unsplash.com/photos/man-in-black-jacket-holding-black-and-white-ceramic-mug-jUh3oAczfak",
+  "id": "jUh3oAczfak"
+ },
+ "band": {
+  "file": "photos/band-tMsMCtFAh7o.jpg",
+  "name": "Walls.io",
+  "profile": "https://unsplash.com/@walls_io",
+  "page": "https://unsplash.com/photos/a-woman-sitting-at-a-desk-with-headphones-on-tMsMCtFAh7o",
+  "id": "tMsMCtFAh7o"
+ },
+ "bottom": {
+  "file": "photos/bottom-2_BrZ3AJ_78.jpg",
+  "name": "Justin Morgan",
+  "profile": "https://unsplash.com/@justin_morgan",
+  "page": "https://unsplash.com/photos/black-spring-notebook-on-brown-wooden-table-2_BrZ3AJ_78",
+  "id": "2_BrZ3AJ_78"
+ }
+}

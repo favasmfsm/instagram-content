@@ -1,0 +1,30 @@
+{
+ "hook": {
+  "file": "photos/hook-5Hl5reICevY.jpg",
+  "name": "Nathan Dumlao",
+  "profile": "https://unsplash.com/@nate_dumlao",
+  "page": "https://unsplash.com/photos/clear-hour-glass-5Hl5reICevY",
+  "id": "5Hl5reICevY"
+ },
+ "side": {
+  "file": "photos/side-aMPjULm0XzI.jpg",
+  "name": "Baylee Gramling",
+  "profile": "https://unsplash.com/@bayleejadegramling",
+  "page": "https://unsplash.com/photos/two-women-sitting-on-the-beach-pointing-at-the-camera-aMPjULm0XzI",
+  "id": "aMPjULm0XzI"
+ },
+ "band": {
+  "file": "photos/band-NTur2_QKpg0.jpg",
+  "name": "Taylor Flowe",
+  "profile": "https://unsplash.com/@taypaigey",
+  "page": "https://unsplash.com/photos/student-raising-hand-in-classroom-NTur2_QKpg0",
+  "id": "NTur2_QKpg0"
+ },
+ "bottom": {
+  "file": "photos/bottom-ebvCsRypmxM.jpg",
+  "name": "Ren\u00e1ta-Adrienn",
+  "profile": "https://unsplash.com/@renataadrienn",
+  "page": "https://unsplash.com/photos/grey-and-black-pen-on-calendar-book-ebvCsRypmxM",
+  "id": "ebvCsRypmxM"
+ }
+}

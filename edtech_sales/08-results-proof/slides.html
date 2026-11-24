@@ -1,0 +1,221 @@
+<!doctype html><html><head><meta charset="utf-8"><title>08-results-proof</title>
+<style>@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap");
+
+/* EdTech Sales Master — carousel slide templates.
+   Every slide is a 1080 × 1350 canvas (.es-slide). Previews show it scaled
+   inside .es-frame; exports render .es-slide at 1:1. Values come from tokens.css. */
+
+.es-stage { display: flex; justify-content: center; padding: 12px 0; background: transparent; }
+.es-frame { width: 432px; height: 540px; overflow: hidden; border-radius: 10px; flex: none; outline: 1px solid var(--line-200); }
+.es-frame > .es-slide { transform: scale(0.4); transform-origin: 0 0; }
+
+.es-slide {
+  position: relative; width: var(--canvas-width, 1080px); height: var(--canvas-height, 1350px); overflow: hidden;
+  background: var(--surface-page); color: var(--text-body);
+  font-family: var(--font-sans); box-sizing: border-box; -webkit-font-smoothing: antialiased;
+}
+.es-slide *, .es-slide *::before, .es-slide *::after { box-sizing: border-box; }
+.es-slide h1, .es-slide h2, .es-slide h3, .es-slide p, .es-slide ul, .es-slide ol, .es-slide figure, .es-slide blockquote { margin: 0; padding: 0; }
+.es-slide--white { background: var(--surface-card); }
+.es-slide--sky { background: var(--surface-panel); }
+.es-slide--dark { background: var(--surface-dark); color: var(--text-on-dark); }
+
+/* Type */
+.es-slide .hook-title, .es-slide .slide-title, .es-slide .card-title, .es-slide .numeral, .es-slide .stat { font-family: var(--font-display); color: var(--text-headline); }
+.es-slide .body, .es-slide .body-lg, .es-slide .label, .es-slide .button, .es-slide .chat { font-family: var(--font-sans); }
+.es-slide em { font-style: normal; color: var(--text-emphasis); }
+.es-slide--dark .hook-title, .es-slide--dark .slide-title, .es-slide--dark .card-title, .es-on-dark .hook-title { color: var(--text-on-dark); }
+.es-slide--dark em, .es-on-dark em { color: var(--highlight); }
+.es-slide--dark .numeral, .es-slide--dark .stat { color: var(--highlight); }
+.es-muted { color: var(--text-muted); }
+.es-slide--dark .es-muted { color: var(--sky-100); }
+
+.es-eyebrow { display: inline-block; text-transform: uppercase; color: var(--text-emphasis); margin-bottom: var(--space-2); }
+.es-slide--dark .es-eyebrow, .es-on-dark .es-eyebrow { color: var(--highlight); }
+
+/* Chrome: header with logo slot, counter, optional co-brand slot, progress, swipe cue */
+.es-top { position: absolute; top: 52px; left: var(--space-safe); right: var(--space-safe); display: flex; align-items: center; gap: var(--space-2); z-index: 3; }
+.es-top .es-mark { width: 44px; height: 44px; flex: none; }
+.es-brand { text-transform: uppercase; color: var(--text-headline); }
+.es-count { margin-left: auto; color: var(--text-emphasis); }
+.es-slide--dark .es-brand { color: var(--text-on-dark); }
+.es-slide--dark .es-count { color: var(--highlight); }
+.es-cobrand { display: grid; place-items: center; max-width: 200px; height: 72px; margin-left: var(--space-3); }
+.es-cobrand img { max-width: 200px; max-height: 72px; object-fit: contain; }
+.es-cobrand--empty { width: 200px; border: 3px dashed var(--line-200); border-radius: var(--radius-sm); color: var(--text-muted); font: 700 18px/1.2 var(--font-sans); letter-spacing: .12em; text-transform: uppercase; }
+
+.es-progress { position: absolute; left: 0; bottom: 0; height: 12px; width: calc(var(--p, 0.5) * 100%); background: var(--accent-fill); z-index: 4; }
+.es-swipe { position: absolute; right: var(--space-safe); bottom: 60px; display: flex; align-items: center; gap: var(--space-2); color: var(--text-headline); z-index: 3; }
+.es-swipe svg { width: 56px; height: 24px; }
+.es-swipe path { stroke: var(--accent-fill); stroke-width: 4; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.es-on-dark .es-swipe, .es-slide--dark .es-swipe { color: var(--text-on-dark); }
+
+/* Photo slots — put <img src="…"> inside the same box; it covers the box */
+.es-photo { position: relative; overflow: hidden; background: var(--navy-700); }
+.es-photo::before { content: ""; position: absolute; inset: 0; background: repeating-linear-gradient(135deg, transparent 0 34px, rgba(228, 236, 247, 0.07) 34px 36px); }
+.es-photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1; }
+.es-photo--light { background: var(--sky-100); }
+.es-photo--light::before { background: repeating-linear-gradient(135deg, transparent 0 34px, rgba(15, 31, 58, 0.06) 34px 36px); }
+.es-photo-note { position: absolute; left: 32px; bottom: 32px; max-width: 78%; background: var(--surface-card); color: var(--text-headline); border-radius: var(--radius-sm); padding: 14px 20px; font: 500 20px/1.35 var(--font-sans); z-index: 0; }
+.es-photo-note::before { content: "PHOTO  "; font-weight: 700; letter-spacing: .14em; color: var(--text-emphasis); }
+
+/* Hook — full-bleed photo */
+.es-fill { position: absolute; inset: 0; }
+.es-scrim { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(15, 31, 58, 0.6) 0%, rgba(15, 31, 58, 0) 22%), linear-gradient(to top, var(--photo-scrim) 0%, var(--photo-scrim) 46%, rgba(15, 31, 58, 0) 82%); z-index: 1; }
+.es-hook { position: absolute; left: var(--space-safe); right: var(--space-safe); bottom: 180px; z-index: 2; color: var(--text-on-dark); }
+.es-hook .hook-title { margin-bottom: var(--space-4); }
+.es-logo-badge { position: absolute; top: 56px; left: var(--space-safe); display: flex; align-items: center; gap: var(--space-2); z-index: 3; color: var(--text-on-dark); }
+.es-logo-badge img { width: 112px; height: 112px; }
+.es-fill .es-photo-note { left: auto; right: var(--space-safe); top: 72px; bottom: auto; max-width: 480px; }
+.es-wordmark { display: flex; flex-direction: column; line-height: 1; }
+.es-wordmark b { font: 800 34px/1 var(--font-display); letter-spacing: -0.01em; }
+.es-wordmark span { font: 700 18px/1.3 var(--font-sans); letter-spacing: .3em; color: var(--text-emphasis); margin-top: 6px; }
+.es-on-dark .es-wordmark span { color: var(--highlight); }
+
+/* Stat — dark, one big number */
+.es-stat-wrap { position: absolute; top: 220px; left: var(--space-safe); right: var(--space-safe); }
+.es-stat-wrap .stat { margin: var(--space-3) 0 var(--space-4); }
+.es-stat-wrap .slide-title { font-size: 60px; max-width: 860px; }
+.es-source { display: block; margin-top: var(--space-4); color: var(--sky-100); text-transform: uppercase; }
+.es-bars { position: absolute; right: var(--space-safe); bottom: 120px; display: flex; align-items: flex-end; gap: 20px; height: 300px; }
+.es-bars i { display: block; width: 72px; border-radius: var(--radius-sm) var(--radius-sm) 0 0; background: var(--navy-700); }
+.es-bars i.on { background: var(--accent-fill); }
+
+/* Side image — text left, photo right */
+.es-side { position: absolute; inset: 0; display: grid; grid-template-columns: 1fr 400px; }
+.es-top--narrow { right: 488px; }
+.es-side .es-photo { height: 100%; border-radius: var(--radius-lg) 0 0 var(--radius-lg); }
+.es-side-text { padding: 200px var(--space-5) 140px var(--space-safe); display: flex; flex-direction: column; }
+.es-side-text .slide-title { margin-bottom: var(--space-4); }
+.es-side-text .body + .body { margin-top: var(--space-3); }
+.es-rule { width: 96px; height: 8px; background: var(--accent-fill); border-radius: var(--radius-pill); margin: var(--space-4) 0; }
+.es-tags { display: flex; flex-wrap: wrap; gap: var(--space-2); margin-top: auto; }
+.es-tag { background: var(--surface-panel); color: var(--text-headline); border-radius: var(--radius-pill); padding: 14px 26px; font: 500 26px/1.2 var(--font-sans); }
+
+/* Numbered list — photo band on top */
+.es-band { position: absolute; top: 0; left: 0; right: 0; height: 28%; border-radius: 0 0 var(--radius-lg) var(--radius-lg); }
+.es-band .es-photo-note { top: 32px; bottom: auto; }
+.es-list-wrap { position: absolute; top: 32%; left: var(--space-safe); right: var(--space-safe); bottom: 110px; display: flex; flex-direction: column; }
+.es-list-wrap .slide-title { margin-bottom: var(--space-4); font-size: 60px; }
+.es-list { list-style: none; display: flex; flex-direction: column; gap: var(--space-3); }
+.es-list li { display: grid; grid-template-columns: 100px 1fr; gap: var(--space-3); align-items: start; padding-bottom: var(--space-3); border-bottom: 2px solid var(--hairline); }
+.es-list li:last-child { border-bottom: 0; }
+.es-list .numeral { font-size: 60px; color: var(--text-emphasis); }
+.es-list h3 { font: 700 32px/1.25 var(--font-sans); color: var(--text-headline); margin-bottom: 4px; }
+.es-list p { font-size: 27px; line-height: 1.45; color: var(--text-muted); }
+
+/* Script — prospect vs counsellor chat */
+.es-script-head { position: absolute; top: 180px; left: var(--space-safe); right: var(--space-safe); }
+.es-script-head .slide-title { font-size: 60px; }
+.es-chat { position: absolute; top: 470px; left: var(--space-safe); right: var(--space-safe); display: flex; flex-direction: column; gap: var(--space-3); }
+.es-bubble { max-width: 760px; padding: 26px 34px; border-radius: var(--radius-md); }
+.es-bubble .label { display: block; margin-bottom: 8px; }
+.es-bubble--them { background: var(--surface-panel); color: var(--text-body); border-bottom-left-radius: 6px; }
+.es-bubble--them .label { color: var(--text-muted); }
+.es-bubble--you { align-self: flex-end; background: var(--surface-dark); color: var(--text-on-dark); border-bottom-right-radius: 6px; }
+.es-bubble--you .label { color: var(--highlight); }
+.es-why { position: absolute; left: var(--space-safe); right: var(--space-safe); bottom: 110px; display: flex; gap: var(--space-2); align-items: flex-start; padding-top: var(--space-3); border-top: 2px solid var(--hairline); color: var(--text-muted); }
+.es-why b { color: var(--text-emphasis); text-transform: uppercase; letter-spacing: .14em; font-size: 22px; padding-top: 4px; flex: none; }
+
+/* Comparison — wrong way vs right way */
+.es-compare-wrap { position: absolute; top: 180px; left: var(--space-safe); right: var(--space-safe); bottom: 110px; display: flex; flex-direction: column; }
+.es-compare-wrap .slide-title { margin-bottom: var(--space-5); font-size: 60px; }
+.es-compare { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-3); align-items: stretch; }
+.es-col { min-height: 560px; }
+.es-col { border-radius: var(--radius-md); padding: var(--space-4); display: flex; flex-direction: column; gap: var(--space-3); }
+.es-col--wrong { background: var(--surface-card); color: var(--text-muted); outline: 2px solid var(--hairline); outline-offset: -2px; }
+.es-col--right { background: var(--surface-dark); color: var(--text-on-dark); }
+.es-col-head { display: flex; align-items: center; gap: var(--space-2); text-transform: uppercase; color: var(--text-muted); }
+.es-col--right .es-col-head { color: var(--highlight); }
+.es-col-head svg { width: 34px; height: 34px; flex: none; }
+.es-col-head path { fill: none; stroke: currentColor; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+.es-col p { font-size: 30px; line-height: 1.45; }
+.es-col p + p { padding-top: var(--space-3); border-top: 2px solid var(--hairline); }
+.es-col--right p + p { border-top-color: var(--navy-700); }
+
+/* Steps — the framework, dark */
+.es-steps-wrap { position: absolute; top: 190px; left: var(--space-safe); right: var(--space-safe); bottom: 110px; display: flex; flex-direction: column; }
+.es-steps-wrap .slide-title { margin-bottom: var(--space-5); font-size: 64px; }
+.es-steps { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-3); }
+.es-steps li { background: var(--surface-dark-raised); border-radius: var(--radius-md); padding: var(--space-4); min-height: 360px; display: flex; flex-direction: column; }
+.es-steps .numeral { font-size: 72px; margin-bottom: var(--space-3); }
+.es-steps h3 { font: 800 40px/1.1 var(--font-display); color: var(--text-on-dark); margin-bottom: var(--space-2); }
+.es-steps p { font-size: 26px; line-height: 1.45; color: var(--sky-100); }
+
+/* Bottom image — text top, photo bottom 38% */
+.es-bottom-text { position: absolute; top: 190px; left: var(--space-safe); right: var(--space-safe); }
+.es-bottom-text .slide-title { margin-bottom: var(--space-3); }
+.es-bottom-photo { position: absolute; left: 0; right: 0; bottom: 0; height: 38%; border-radius: var(--radius-lg) var(--radius-lg) 0 0; }
+.es-callout { display: inline-block; margin-top: var(--space-4); padding: 22px 30px; background: var(--surface-card); border-radius: var(--radius-md); color: var(--text-headline); outline: 2px solid var(--hairline); outline-offset: -2px; }
+.es-callout strong { color: var(--text-emphasis); margin-right: 8px; }
+
+/* Save-worthy (penultimate) */
+.es-save-head { position: absolute; top: 180px; left: var(--space-safe); right: var(--space-safe); }
+.es-save-head .slide-title { font-size: 64px; }
+.es-save-card { position: absolute; left: var(--space-safe); right: var(--space-safe); top: 470px; background: var(--surface-card); border-radius: var(--radius-md); padding: var(--space-3) var(--space-5); }
+.es-checks { list-style: none; display: flex; flex-direction: column; }
+.es-checks li { display: grid; grid-template-columns: 52px 1fr; gap: var(--space-2); align-items: start; padding: 20px 0; border-bottom: 2px solid var(--hairline); color: var(--text-body); }
+.es-checks li:last-child { border-bottom: 0; }
+.es-checks b { color: var(--text-headline); }
+.es-check { width: 44px; height: 44px; border-radius: 50%; background: var(--accent-fill); display: grid; place-items: center; margin-top: 2px; }
+.es-check svg { width: 24px; height: 24px; }
+.es-check path { fill: none; stroke: var(--on-accent); stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+.es-save-cue { position: absolute; left: var(--space-safe); bottom: 60px; display: flex; gap: var(--space-2); align-items: center; color: var(--text-headline); }
+.es-save-cue svg { width: 30px; height: 34px; }
+.es-save-cue path { fill: var(--accent-fill); }
+
+/* Final — follow */
+.es-final { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 0 var(--space-safe); }
+.es-final-mark { width: 240px; height: 240px; margin-bottom: var(--space-5); }
+.es-final .slide-title { font-size: 76px; max-width: 860px; }
+.es-final .body-lg { color: var(--text-muted); margin: var(--space-3) 0 var(--space-5); max-width: 760px; }
+.es-pill { display: inline-flex; align-items: center; gap: var(--space-2); background: var(--accent-fill); color: var(--on-accent); border-radius: var(--radius-pill); padding: 28px 60px; }
+.es-pill svg { width: 30px; height: 30px; }
+.es-pill path { fill: none; stroke: currentColor; stroke-width: 4; stroke-linecap: round; }
+.es-final-sign { position: absolute; left: 0; right: 0; bottom: 84px; text-align: center; }
+.es-final-sign .handle { font: 800 32px/1.3 var(--font-display); color: var(--text-headline); }
+.es-final-sign .label { display: block; margin-top: 8px; color: var(--text-emphasis); text-transform: uppercase; }
+
+:root{--navy-900:#0f1f3a;--navy-700:#1f3a64;--orange-500:#ff6b1a;--orange-700:#c2470a;--amber-300:#ffc24b;--chalk-50:#f7f5f0;--white:#ffffff;--sky-100:#e4ecf7;--ink:#1c2533;--slate-600:#4a5568;--line-200:#d9dee7;--surface-page:var(--chalk-50);--surface-card:var(--white);--surface-panel:var(--sky-100);--surface-dark:var(--navy-900);--surface-dark-raised:var(--navy-700);--text-headline:var(--navy-900);--text-body:var(--ink);--text-muted:var(--slate-600);--text-emphasis:var(--orange-700);--text-on-dark:var(--chalk-50);--highlight:var(--amber-300);--accent-fill:var(--orange-500);--on-accent:var(--navy-900);--hairline:var(--line-200);--photo-scrim:rgba(15, 31, 58, 0.78);--space-1:8px;--space-2:16px;--space-3:24px;--space-4:40px;--space-5:64px;--space-safe:88px;--radius-sm:12px;--radius-md:24px;--radius-lg:40px;--radius-pill:999px;--shadow-card:0 20px 48px rgba(15, 31, 58, 0.18);--canvas-width:1080px;--canvas-height:1350px;--image-min:25%;--image-max:40%;--font-display:"Bricolage Grotesque", "Arial Black", system-ui, sans-serif;--font-sans:"DM Sans", system-ui, -apple-system, "Segoe UI", sans-serif;}
+.hook-title{font-size:100px;line-height:1.02;font-weight:800;letter-spacing:-0.02em;}
+.slide-title{font-size:70px;line-height:1.06;font-weight:800;letter-spacing:-0.015em;}
+.card-title{font-size:42px;line-height:1.15;font-weight:700;}
+.numeral{font-size:88px;line-height:1;font-weight:800;}
+.stat{font-size:260px;line-height:0.9;font-weight:800;letter-spacing:-0.04em;}
+.body-lg{font-size:36px;line-height:1.45;font-weight:400;}
+.body{font-size:30px;line-height:1.5;font-weight:400;}
+.chat{font-size:32px;line-height:1.4;font-weight:500;}
+.label{font-size:22px;line-height:1.3;font-weight:700;letter-spacing:0.14em;}
+.button{font-size:28px;line-height:1.2;font-weight:700;}
+
+html,body{margin:0;background:#8a93a3}
+.s{display:block;width:1080px;height:1350px;margin:0 0 24px}
+body.one .s{display:none;margin:0} body.one .s.on{display:block}
+</style></head><body>
+<section class="s" id="s1"><div class="es-slide es-on-dark">
+<div class="es-fill"><div class="es-photo es-fill"><img src="photos/hook-fsltc8BKbRw.jpg" alt=""></div></div>
+<div class="es-scrim"></div>
+<div class="es-logo-badge"><img src="../_system/logos/esm-mark-reverse.svg" alt="EdTech Sales Master"><div class="es-wordmark"><b>EdTech Sales</b><span>MASTER</span></div></div>
+<div class="es-hook"><span class="label es-eyebrow">Marketing</span><h1 class="hook-title">Stop writing better ads. <em>Start showing better proof.</em></h1><p class="body-lg">Your last batch's results sell harder than any offer. Here's how to collect them and use them.</p></div>
+<div class="es-swipe button">Swipe <svg viewBox="0 0 56 24" aria-hidden="true"><path d="M2 12H52M42 3L52 12L42 21"/></svg></div><div class="es-progress" style="--p:0.125"></div></div></section><section class="s" id="s2"><div class="es-slide"><div class="es-photo es-band es-photo--light"><img src="photos/band-oTglG1D4hRA.jpg" alt=""></div>
+<div class="es-list-wrap"><h2 class="slide-title">The <em>proof ladder</em>, weakest to strongest</h2><ol class="es-list"><li><span class="numeral">01</span><div><h3>Claims</h3><p>"Best faculty in town." Nobody believes it.</p></div></li><li><span class="numeral">02</span><div><h3>Numbers</h3><p>Selections and score jumps, with names and consent.</p></div></li><li><span class="numeral">03</span><div><h3>Video stories</h3><p>A student explaining what changed for them.</p></div></li><li><span class="numeral">04</span><div><h3>Parent voice notes</h3><p>One parent telling another. The strongest of all.</p></div></li></ol></div><div class="es-progress" style="--p:0.250"></div></div></section><section class="s" id="s3"><div class="es-slide es-slide--dark"><div class="es-top"><img class="es-mark" src="../_system/logos/esm-mark-reverse.svg" alt=""><span class="label es-brand">EdTech Sales Master</span><span class="label es-count">03 / 08</span></div>
+<div class="es-steps-wrap"><span class="label es-eyebrow">The framework</span><h2 class="slide-title">Collect proof <em>while it's fresh</em></h2><ol class="es-steps"><li><span class="numeral">01</span><h3>Day 30</h3><p>Ask for a short voice note on what's improved.</p></li><li><span class="numeral">02</span><h3>Mock results</h3><p>Screenshot score jumps, with consent.</p></li><li><span class="numeral">03</span><h3>Results day</h3><p>Call every selected student. Record 60 seconds.</p></li><li><span class="numeral">04</span><h3>Every parent</h3><p>Ask: "Can we share your words with other parents?"</p></li></ol></div><div class="es-progress" style="--p:0.375"></div></div></section><section class="s" id="s4"><div class="es-slide"><div class="es-top es-top--narrow"><img class="es-mark" src="../_system/logos/esm-mark.svg" alt=""><span class="label es-brand">EdTech Sales Master</span><span class="label es-count">04 / 08</span></div>
+<div class="es-side"><div class="es-side-text"><span class="label es-eyebrow">Where to use it</span><h2 class="slide-title">Use it <em>where decisions happen.</em></h2>
+<p class="body">Proof sitting on your website does little. Send it in the WhatsApp chat right after the demo.</p><div class="es-rule"></div><p class="body es-muted">Match it: a NEET parent gets a NEET parent's voice note.</p><div class="es-tags"><span class="es-tag">WhatsApp</span><span class="es-tag">Calls</span><span class="es-tag">Ads</span></div></div>
+<div class="es-photo "><img src="photos/side-Nf5fSqHm-iY.jpg" alt=""></div></div><div class="es-progress" style="--p:0.500"></div></div></section><section class="s" id="s5"><div class="es-slide es-slide--white"><div class="es-top"><img class="es-mark" src="../_system/logos/esm-mark.svg" alt=""><span class="label es-brand">EdTech Sales Master</span><span class="label es-count">05 / 08</span></div>
+<div class="es-script-head"><span class="label es-eyebrow">On the call</span><h2 class="slide-title">Let <em>another parent</em> say it</h2></div>
+<div class="es-chat"><div class="es-bubble es-bubble--them chat"><span class="label">Parent</span>"How do I know this will work for my son?"</div><div class="es-bubble es-bubble--you chat"><span class="label">You</span>"Fair question. Can I send you a 40-second voice note from a parent whose son was in the same spot last year?"</div><div class="es-bubble es-bubble--them chat"><span class="label">Parent</span>"Yes, please send it."</div></div><div class="es-why body"><b>Why</b><span>Don't argue that it works. Let someone they relate to say it.</span></div><div class="es-progress" style="--p:0.625"></div></div></section><section class="s" id="s6"><div class="es-slide"><div class="es-top"><img class="es-mark" src="../_system/logos/esm-mark.svg" alt=""><span class="label es-brand">EdTech Sales Master</span><span class="label es-count">06 / 08</span></div>
+<div class="es-bottom-text"><span class="label es-eyebrow">Always</span><h2 class="slide-title">Ask before you <em>share anyone's results.</em></h2>
+<p class="body-lg es-muted">Written consent from the student and the parent, every time. Blur phone numbers and personal details.</p><div class="es-callout body"><strong>Keep it simple:</strong> a one-line WhatsApp consent message, saved.</div></div>
+<div class="es-photo es-bottom-photo"><img src="photos/bottom-Dilfan21P8o.jpg" alt=""></div><div class="es-progress" style="--p:0.750"></div></div></section><section class="s" id="s7"><div class="es-slide es-slide--sky"><div class="es-top"><img class="es-mark" src="../_system/logos/esm-mark.svg" alt=""><span class="label es-brand">EdTech Sales Master</span><span class="label es-count">07 / 08</span></div>
+<div class="es-save-head"><span class="label es-eyebrow">Your proof checklist</span><h2 class="slide-title">Save this for <em>results season.</em></h2></div>
+<div class="es-save-card"><ul class="es-checks"><li><span class="es-check"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5L10 17L19 7"/></svg></span><span class="body"><b>Ask for a voice note</b> at day 30.</span></li><li><span class="es-check"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5L10 17L19 7"/></svg></span><span class="body"><b>Screenshot score jumps</b>, with consent.</span></li><li><span class="es-check"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5L10 17L19 7"/></svg></span><span class="body"><b>Record 60 seconds</b> on results day.</span></li><li><span class="es-check"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5L10 17L19 7"/></svg></span><span class="body"><b>Match the story</b> to the parent's exam.</span></li><li><span class="es-check"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5L10 17L19 7"/></svg></span><span class="body"><b>Send proof</b> right after the demo.</span></li><li><span class="es-check"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5L10 17L19 7"/></svg></span><span class="body"><b>Never share</b> without written consent.</span></li></ul></div>
+<div class="es-save-cue button"><svg viewBox="0 0 30 34" aria-hidden="true"><path d="M2 2H28V32L15 23L2 32Z"/></svg> Save &amp; share with your team</div><div class="es-progress" style="--p:0.875"></div></div></section><section class="s" id="s8"><div class="es-slide"><div class="es-final">
+<img class="es-final-mark" src="../_system/logos/esm-mark.svg" alt="EdTech Sales Master">
+<h2 class="slide-title">Weekly sales playbooks for <em>edtech teams.</em></h2><p class="body-lg">Scripts, frameworks and marketing ideas that close more admissions.</p>
+<span class="es-pill button">Follow for more <svg viewBox="0 0 30 30" aria-hidden="true"><path d="M15 5V25M5 15H25"/></svg></span></div>
+<div class="es-final-sign"><div class="handle">@edtechsalesmaster</div><span class="label">Sales · Marketing · Growth</span></div><div class="es-progress" style="--p:1.000"></div></div></section>
+<script>
+var m=location.search.match(/slide=(\d+)/);
+if(m){document.body.classList.add('one');document.getElementById('s'+m[1]).classList.add('on');}
+</script></body></html>

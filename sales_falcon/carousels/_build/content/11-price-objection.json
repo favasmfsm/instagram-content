@@ -1,0 +1,54 @@
+{
+  "slug": "11-price-objection",
+  "photos": {},
+  "slides": [
+    { "type": "cover", "photo": "cover", "eyebrow": "Objection handling",
+      "title": "\"Price\n*കൂടുതലാണ്.*\"",
+      "sub": "Discount കൊടുക്കും മുൻപ് ഇത് വായിക്കൂ." },
+    { "type": "stakes", "eyebrow": "The real cost",
+      "title": "Discount കൊടുത്താൽ പോകുന്നത് *margin മാത്രമല്ല.*",
+      "line": "അടുത്ത deal-ലെ price-ഉം നിങ്ങളുടെ value-ഉം കൂടെ പോകും.",
+      "next": "എങ്ങനെ handle ചെയ്യാം" },
+    { "type": "split", "photo": "split", "eyebrow": "The truth",
+      "title": "Price പലപ്പോഴും *real problem* അല്ല.",
+      "body": "\"Price കൂടുതലാണ്\" എന്ന് പറയുമ്പോൾ customer-ന്റെ മനസ്സിൽ ഉള്ളത്: value മനസ്സിലായില്ല, risk-നെ കുറിച്ചുള്ള പേടി, അല്ലെങ്കിൽ budget timing.",
+      "note": "ആദ്യം ചോദിക്കുക.\nമറുപടി അതിന് ശേഷം മാത്രം.",
+      "tags": ["Value", "Risk", "Timing"] },
+    { "type": "chat", "eyebrow": "Reply 1 · Illustrative example",
+      "title": "*എന്തുമായി* ആണ് compare ചെയ്യുന്നത്?",
+      "messages": [
+        { "who": "them", "text": "\"Rate കുറച്ച് കൂടുതലാണ്.\"" },
+        { "who": "you", "text": "\"Sir, ഏത് quote-മായിട്ടാണ് compare ചെയ്യുന്നത്? അതിൽ എന്തൊക്കെ include ആണ്?\"" },
+        { "who": "them", "text": "\"Installation-ഉം service-ഉം അതിൽ ഇല്ല…\"" }
+      ],
+      "why": "Same കാര്യങ്ങൾ തന്നെയാണോ compare ചെയ്യുന്നത് എന്ന് ആദ്യം ഉറപ്പാക്കൂ." },
+    { "type": "ba", "eyebrow": "Reply 2",
+      "title": "Price *ചെറുതാക്കി* കാണിക്കൂ",
+      "before": ["\"Total ₹36,000 ആണ് sir.\"", "Customer കാണുന്നത് ഒരു വലിയ number മാത്രം."],
+      "after": ["\"ദിവസം ഏകദേശം ₹100. ഒരു chai-യുടെയും snack-ന്റെയും cost.\"", "Price അതുതന്നെ. പക്ഷേ ചെറുതായി തോന്നും."],
+      "why": "Price മാറ്റേണ്ട. Price കാണിക്കുന്ന രീതി മാറ്റിയാൽ മതി." },
+    { "type": "chat", "eyebrow": "Reply 3 · Illustrative example",
+      "title": "ഒന്നും ചെയ്തില്ലെങ്കിൽ *എത്ര പോകും?*",
+      "messages": [
+        { "who": "you", "text": "\"ഇപ്പോഴത്തെ system കൊണ്ട് ഒരു മാസം എത്ര order miss ആകുന്നുണ്ട്?\"" },
+        { "who": "them", "text": "\"ഏകദേശം 5–6 എണ്ണം.\"" },
+        { "who": "you", "text": "\"ഒരു order ₹8,000 ആണെങ്കിൽ മാസം ₹40,000-ൽ കൂടുതൽ പോകുന്നു. ഇതിന് മാസം ₹3,000.\"" }
+      ],
+      "why": "Price ഒറ്റയ്ക്ക് കാണിക്കരുത്. Loss-ന്റെ അടുത്ത് വെച്ച് കാണിക്കൂ." },
+    { "type": "list", "eyebrow": "Next time you hear it", "numbered": true,
+      "title": "Price objection വന്നാൽ *ഇത് ചെയ്യൂ.*",
+      "items": [
+        "Panic ആകരുത്. **Discount ആദ്യം offer ചെയ്യരുത്.**",
+        "**\"എന്തുമായിട്ടാണ് compare ചെയ്യുന്നത്?\"** എന്ന് ചോദിക്കൂ.",
+        "Price-നെ **per day / per use** ആക്കി പറയൂ.",
+        "ഒന്നും ചെയ്തില്ലെങ്കിലുള്ള **loss** കാണിക്കൂ.",
+        "Discount വേണമെങ്കിൽ, **പകരം എന്തെങ്കിലും വാങ്ങൂ.**"
+      ] },
+    { "type": "cta", "title": "Price objection\n*scripts* വേണോ?",
+      "sub": "ഈ 3 replies-ഉം WhatsApp-ൽ നേരിട്ട് അയക്കാവുന്ന versions-ഉം.",
+      "ask": "നിങ്ങൾ ഏറ്റവും കൂടുതൽ കേൾക്കുന്ന objection ഏതാണ്? Comment ചെയ്യൂ." },
+    { "type": "follow" }
+  ],
+  "caption": "\"Price കൂടുതലാണ്.\"\nഇത് കേട്ട ഉടനെ discount കൊടുക്കാറുണ്ടോ?\n\nDiscount കൊടുത്താൽ പോകുന്നത് margin മാത്രമല്ല, അടുത്ത deal-ലെ price-ഉം കൂടിയാണ്.\n\nDiscount ഇല്ലാതെ 3 replies:\n1. \"എന്തുമായിട്ടാണ് compare ചെയ്യുന്നത്?\"\n2. Price-നെ per day ആക്കി പറയുക\n3. ഒന്നും ചെയ്തില്ലെങ്കിലുള്ള loss കാണിക്കുക\n(Illustrative examples.)\n\nനിങ്ങൾ ഏറ്റവും കൂടുതൽ കേൾക്കുന്ന objection ഏതാണ്? Comment ചെയ്യൂ.\nPrice objection scripts വേണോ? \"playbook\" എന്ന് DM ചെയ്യൂ.",
+  "hashtags": "#salestips #objectionhandling #pricing #negotiation #malayalam #salesmalayalam #keralabusiness #thesalesfalcon"
+}

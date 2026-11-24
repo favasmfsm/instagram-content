@@ -1,0 +1,4 @@
+{"01-price-objection": {"hook": ["_system/search.json","A-hook",2], "side": ["_system/search.json","A-side",4],
+   "band": ["_system/search2.json","A-band",2], "bottom": ["_system/search.json","A-bottom",6]},
+ "02-demo-class-sales-call": {"hook": ["_system/search.json","B-hook",5], "band": ["_system/search.json","B-band",5],
+   "side": ["_system/search.json","B-side",4], "bottom": ["_system/search.json","B-bottom",2]}}
