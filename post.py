@@ -82,9 +82,13 @@ def to_jpegs(account, c):
     jpgs = []
     for i, png in enumerate(c["slides"], 1):
         jpg = out_dir / f"{i:02d}.jpg"
-        if not jpg.exists() or jpg.stat().st_mtime < png.stat().st_mtime:
-            subprocess.run(["sips", "-s", "format", "jpeg", "-s", "formatOptions", "92",
-                            str(png), "--out", str(jpg)], check=True, capture_output=True)
+        if not jpg.exists():
+            try:
+                from PIL import Image
+                Image.open(png).convert("RGB").save(jpg, "JPEG", quality=92)
+            except ImportError:  # macOS without Pillow
+                subprocess.run(["sips", "-s", "format", "jpeg", "-s", "formatOptions", "92",
+                                str(png), "--out", str(jpg)], check=True, capture_output=True)
         jpgs.append(jpg)
     return jpgs
 

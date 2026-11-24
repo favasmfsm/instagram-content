@@ -19,12 +19,15 @@ concurrency:
 
 jobs:
   post:
-    runs-on: macos-latest   # has sips for PNG -> JPEG
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
     env:
       ACCOUNTS_JSON: ${{ secrets.ACCOUNTS_JSON }}
       MODE: ${{ (github.event_name == 'schedule' || inputs.live) && '--live' || '' }}
     steps:
       - uses: actions/checkout@v4
+      - name: Install Pillow
+        run: python3 -m pip install --quiet pillow
       - name: Git identity
         run: |
           git config user.name "instagram-bot"
