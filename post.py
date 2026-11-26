@@ -143,32 +143,62 @@ def api_base(token):
     return f"https://{host}/v27.0"
 
 
-def call(token, method, path, **params):
+class APIError(Exception):
+    pass
+
+
+# Graph API throttling codes: 4 = app limit, 17 = user limit, 32 = page limit, 613 = rate limit.
+RATE_LIMIT_CODES = {4, 17, 32, 613}
+RATE_LIMIT_WAITS = [60, 120, 240]  # seconds between retries when throttled
+
+
+def call(token, method, path, retry=True, **params):
     params["access_token"] = token
     data = urllib.parse.urlencode(params).encode()
     url = f"{api_base(token)}/{path}"
-    if method == "GET":
-        req = urllib.request.Request(f"{url}?{data.decode()}")
-    else:
-        req = urllib.request.Request(url, data=data, method="POST")
-    try:
-        with urllib.request.urlopen(req) as r:
-            return json.load(r)
-    except urllib.error.HTTPError as e:
-        err = json.loads(e.read() or b"{}").get("error", {})
-        sys.exit(f"Instagram API error on {path}: {err.get('message', e)}")
+    waits = list(RATE_LIMIT_WAITS) if retry else []
+    while True:
+        if method == "GET":
+            req = urllib.request.Request(f"{url}?{data.decode()}")
+        else:
+            req = urllib.request.Request(url, data=data, method="POST")
+        try:
+            with urllib.request.urlopen(req) as r:
+                return json.load(r)
+        except urllib.error.HTTPError as e:
+            err = json.loads(e.read() or b"{}").get("error", {})
+            msg = f"Instagram API error on {path}: {err.get('message', e)}"
+            if err.get("code") in RATE_LIMIT_CODES and waits:
+                w = waits.pop(0)
+                print(f"  {msg} - waiting {w}s and retrying")
+                time.sleep(w)
+                continue
+            raise APIError(msg)
 
 
 def wait_ready(token, container_id, timeout=300):
+    # Poll gently: every status check counts against the app's hourly call limit.
     deadline = time.time() + timeout
+    delay = 3
     while time.time() < deadline:
+        time.sleep(delay)
         status = call(token, "GET", container_id, fields="status_code").get("status_code")
         if status == "FINISHED":
             return
         if status in ("ERROR", "EXPIRED"):
-            sys.exit(f"Container {container_id} failed with status {status}")
-        time.sleep(5)
-    sys.exit(f"Container {container_id} not ready after {timeout}s")
+            raise APIError(f"Container {container_id} failed with status {status}")
+        delay = min(delay * 2, 30)
+    raise APIError(f"Container {container_id} not ready after {timeout}s")
+
+
+def find_published(token, ig_id, caption, since):
+    """Return the post with this caption published at/after `since`, if Instagram made it live."""
+    data = call(token, "GET", f"{ig_id}/media", fields="id,permalink,timestamp,caption", limit=5)
+    for m in data.get("data", []):
+        at = datetime.strptime(m["timestamp"], "%Y-%m-%dT%H:%M:%S%z")
+        if at >= since and (m.get("caption") or "").strip() == caption.strip():
+            return m
+    return None
 
 
 def quota(token, ig_id):
@@ -230,13 +260,46 @@ def cmd_post(account, folder, live):
     carousel = call(token, "POST", f"{ig_id}/media", media_type="CAROUSEL",
                     children=",".join(children), caption=c["caption"])["id"]
     wait_ready(token, carousel)
-    media_id = call(token, "POST", f"{ig_id}/media_publish", creation_id=carousel)["id"]
-    link = call(token, "GET", media_id, fields="permalink").get("permalink")
+
+    # media_publish must not be blindly retried: Instagram sometimes publishes the post
+    # and still returns an error, so a retry would post it twice. Check first.
+    started = datetime.now(timezone.utc).replace(microsecond=0)
+    try:
+        media_id = call(token, "POST", f"{ig_id}/media_publish", retry=False,
+                        creation_id=carousel)["id"]
+        link = call(token, "GET", media_id, fields="permalink").get("permalink")
+        at = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S%z")
+    except APIError as e:
+        print(f"  {e} - checking whether it went live anyway...")
+        m = None
+        for w in [30] + RATE_LIMIT_WAITS:
+            time.sleep(w)
+            try:
+                m = find_published(token, ig_id, c["caption"], started.replace(second=0))
+                if m:
+                    break
+                status = call(token, "GET", carousel, fields="status_code").get("status_code")
+            except APIError as e2:
+                print(f"  {e2}")
+                continue
+            if status == "FINISHED":  # still unpublished and publishable: try once more
+                print("  Not live yet; publishing again...")
+                try:
+                    media_id = call(token, "POST", f"{ig_id}/media_publish", retry=False,
+                                    creation_id=carousel)["id"]
+                    m = {"id": media_id,
+                         "permalink": call(token, "GET", media_id, fields="permalink").get("permalink"),
+                         "timestamp": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S%z")}
+                    break
+                except APIError as e3:
+                    print(f"  {e3}")
+        if not m:
+            raise APIError(f"Publish failed and the post is not live: {e}")
+        media_id, link, at = m["id"], m["permalink"], m["timestamp"]
     print(f"Published: {link}")
 
     posted.setdefault(account, {})[c["folder"]] = {
-        "media_id": media_id, "permalink": link,
-        "at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S%z"),
+        "media_id": media_id, "permalink": link, "at": at,
     }
     POSTED_FILE.write_text(json.dumps(posted, indent=2, ensure_ascii=False) + "\n")
     changed = [POSTED_FILE] + mark_csv_posted(account, c["folder"])
@@ -249,7 +312,8 @@ def mark_csv_posted(account, folder):
     path = SOURCES[account][0] / "carousel-ideas.csv"
     if not path.exists():
         return []
-    raw = path.read_text(encoding="utf-8-sig")
+    with open(path, encoding="utf-8-sig", newline="") as f:  # keep CRLF line endings
+        raw = f.read()
     nl = "\r\n" if "\r\n" in raw else "\n"
     rows = list(csv.reader(io.StringIO(raw)))
     head = rows[0]
@@ -283,11 +347,14 @@ def cmd_next(account, live, daily=False):
 if __name__ == "__main__":
     args = [a for a in sys.argv[1:] if not a.startswith("--")]
     live = "--live" in sys.argv
-    if args[:1] == ["list"]:
-        cmd_list()
-    elif args[:1] == ["next"] and len(args) == 2:
-        cmd_next(args[1], live, daily="--daily" in sys.argv)
-    elif args[:1] == ["post"] and len(args) == 3:
-        cmd_post(args[1], args[2], live)
-    else:
-        print(__doc__)
+    try:
+        if args[:1] == ["list"]:
+            cmd_list()
+        elif args[:1] == ["next"] and len(args) == 2:
+            cmd_next(args[1], live, daily="--daily" in sys.argv)
+        elif args[:1] == ["post"] and len(args) == 3:
+            cmd_post(args[1], args[2], live)
+        else:
+            print(__doc__)
+    except APIError as e:
+        sys.exit(str(e))
