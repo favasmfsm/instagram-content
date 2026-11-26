@@ -1,0 +1,90 @@
+{
+  "slug": "16-ask-for-the-order",
+  "ds": true,
+  "slides": [
+    {
+      "type": "hook",
+      "kicker": "Closing",
+      "title": "Meeting നന്നായി പോയി.\nOrder *ചോദിച്ചില്ല.*",
+      "sub": "ചോദിച്ചില്ലെങ്കിൽ ഉത്തരം എപ്പോഴും no ആണ്."
+    },
+    {
+      "type": "hook2",
+      "title": "എന്തിനാണ് *മടി?*",
+      "body": "\"No\" കേൾക്കാനുള്ള പേടി. Pushy ആകുമോ എന്ന ചിന്ത. പക്ഷേ customer-ഉം നിങ്ങൾ ചോദിക്കാൻ കാത്തിരിക്കുകയാണ്."
+    },
+    {
+      "type": "steps",
+      "title": "5 low-pressure *questions*",
+      "items": [
+        {
+          "h": "\"ഏത് date-ൽ start ചെയ്യാം?\""
+        },
+        {
+          "h": "\"1 pack വേണോ, 3 വേണോ?\""
+        },
+        {
+          "h": "\"Invoice ആരുടെ പേരിൽ?\""
+        },
+        {
+          "h": "\"ഇനി എന്തെങ്കിലും clear ആകാനുണ്ടോ?\""
+        },
+        {
+          "h": "\"Next step ആയി എന്ത് ചെയ്യാം?\""
+        }
+      ]
+    },
+    {
+      "type": "tip",
+      "n": "02",
+      "title": "Buying *signals* കാണൂ",
+      "body": "Delivery date ചോദിക്കുന്നു, payment terms ചോദിക്കുന്നു, മറ്റൊരാളെ call-ൽ കൂട്ടുന്നു. അപ്പോൾ ചോദിക്കണം."
+    },
+    {
+      "type": "call",
+      "title": "\"Let me think\" *കേട്ടാൽ*",
+      "bar": "Closing call · Illustrative example",
+      "rows": [
+        {
+          "who": "Customer",
+          "say": "ഞാൻ ഒന്ന് ആലോചിക്കട്ടെ."
+        },
+        {
+          "who": "You",
+          "rep": true,
+          "say": "തീർച്ചയായും. Price ആണോ timing ആണോ ആലോചിക്കാനുള്ളത്?"
+        },
+        {
+          "who": "Customer",
+          "say": "Timing ആണ്. March-ൽ budget വരും."
+        },
+        {
+          "who": "You",
+          "rep": true,
+          "say": "എങ്കിൽ March 3-ന് start date lock ചെയ്യട്ടേ?"
+        }
+      ],
+      "caption": "\"ആലോചിക്കട്ടെ\" ഒരു end അല്ല, ഒരു question ആണ്."
+    },
+    {
+      "type": "cheatsheet",
+      "title": "Order ചോദിക്കാൻ",
+      "items": [
+        "Meeting അവസാനിക്കും മുൻപ് ചോദിക്കൂ",
+        "Yes/No അല്ല, choice കൊടുക്കൂ",
+        "Buying signals കാണുമ്പോൾ ചോദിക്കൂ",
+        "\"ആലോചിക്കട്ടെ\": എന്താണ് ആലോചിക്കാൻ?",
+        "Next step date ഉറപ്പിക്കൂ"
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "അടുത്ത meeting-ൽ\n*use* ചെയ്യൂ",
+      "sub": "Save ചെയ്ത് വെക്കൂ, meeting-ന് മുൻപ് ഒന്ന് നോക്കൂ.",
+      "pill": "Save this",
+      "icon": "bookmark"
+    }
+  ],
+  "caption": "Meeting നന്നായി പോയി. പക്ഷേ order ചോദിച്ചില്ല.\n\nചോദിച്ചില്ലെങ്കിൽ ഉത്തരം എപ്പോഴും no ആണ്. Yes/No അല്ല, choice കൊടുക്കുന്ന 5 questions ഇതാ.\n(Illustrative example.)\n\nSave ചെയ്ത് അടുത്ത meeting-ൽ use ചെയ്യൂ.",
+  "hashtags": "#salestips #closing #closingdeals #salesskills #malayalam #salesmalayalam #keralabusiness #thesalesfalcon"
+}

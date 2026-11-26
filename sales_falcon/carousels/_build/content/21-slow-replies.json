@@ -1,0 +1,76 @@
+{
+  "slug": "21-slow-replies",
+  "ds": true,
+  "slides": [
+    {
+      "type": "hook",
+      "kicker": "Inbound leads",
+      "title": "തിരിച്ചു വിളിച്ചപ്പോൾ\nഅവർ വേറെ എവിടെയോ *വാങ്ങി.*",
+      "small": true,
+      "sub": "Inbound lead കാത്തിരിക്കില്ല."
+    },
+    {
+      "type": "hook2",
+      "title": "Customer *3 പേരെ* contact ചെയ്യുന്നു",
+      "body": "ആദ്യം reply ചെയ്യുന്നയാൾ conversation set ചെയ്യും. ബാക്കിയുള്ളവരെ അവരുമായി compare ചെയ്യും."
+    },
+    {
+      "type": "tip",
+      "n": "01",
+      "title": "Response-time *rule* വെക്കൂ",
+      "body": "Example: work hours-ൽ ഓരോ inbound lead-നും 15 മിനിറ്റിനുള്ളിൽ ഒരു human reply. എഴുതി വെക്കൂ."
+    },
+    {
+      "type": "tip",
+      "n": "02",
+      "title": "Lead ഉടനെ ഒരാൾക്ക് *assign*",
+      "body": "Lunch കഴിഞ്ഞ് ആരെങ്കിലും നോക്കുന്ന shared inbox അല്ല. ഓരോ lead-നും ഒരു പേരുള്ള owner."
+    },
+    {
+      "type": "chat",
+      "title": "Off-hours-ൽ *instant* reply",
+      "initials": "FA",
+      "name": "Fathima A.",
+      "sub": "Website enquiry · Illustrative example",
+      "messages": [
+        {
+          "out": false,
+          "text": "Hi, 20 users-ന് pricing അറിയണം.",
+          "t": "9:12 pm"
+        },
+        {
+          "out": true,
+          "text": "Thanks Fathima! നാളെ 10 മണിക്ക് Arjun വിളിക്കും. ആ സമയം OK ആണോ?",
+          "t": "9:12 pm"
+        }
+      ],
+      "caption": "പറഞ്ഞ സമയത്ത് വിളിക്കുക. അതാണ് promise."
+    },
+    {
+      "type": "tip",
+      "n": "03",
+      "title": "സ്വയം *test* ചെയ്യൂ",
+      "body": "ഇന്ന് നിങ്ങളുടെ website form fill ചെയ്യൂ. Reply വരാൻ എത്ര സമയം എടുത്തു? എന്താണ് പറഞ്ഞത്?"
+    },
+    {
+      "type": "cheatsheet",
+      "title": "Speed to lead",
+      "items": [
+        "15 മിനിറ്റ് reply rule",
+        "ഓരോ lead-നും ഒരു owner",
+        "Off-hours: instant reply + time",
+        "പറഞ്ഞ സമയത്ത് വിളിക്കൂ",
+        "ഇന്ന് തന്നെ സ്വയം test ചെയ്യൂ"
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Speed ആണ് *first*\nimpression",
+      "sub": "Save ചെയ്ത് ഈ ആഴ്ച slide 6-ലെ test ചെയ്യൂ.",
+      "pill": "Save this",
+      "icon": "bookmark"
+    }
+  ],
+  "caption": "നിങ്ങൾ തിരിച്ചു വിളിച്ചപ്പോൾ അവർ വേറെ എവിടെയോ വാങ്ങിക്കഴിഞ്ഞു.\n\nInbound customer ഒരേ സമയം പലരെയും contact ചെയ്യുന്നു. ആദ്യം reply ചെയ്യുന്നവർക്കാണ് ആദ്യ conversation. Response-time rule വെക്കൂ, lead ഉടനെ assign ചെയ്യൂ.\n(Illustrative example.)\n\nSave ചെയ്ത് ഈ ആഴ്ച നിങ്ങളുടെ form test ചെയ്യൂ.",
+  "hashtags": "#salestips #inboundsales #speedtolead #leadmanagement #malayalam #salesmalayalam #keralabusiness #thesalesfalcon"
+}

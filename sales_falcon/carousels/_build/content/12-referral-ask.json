@@ -1,0 +1,43 @@
+{
+  "slug": "12-referral-ask",
+  "ds": true,
+  "slides": [
+    { "type": "hook", "kicker": "Referrals",
+      "title": "Happy customer ഉണ്ട്.\nReferral *ചോദിച്ചോ?*",
+      "sub": "മിക്ക salespeople-ഉം ഒരിക്കലും ചോദിക്കാറില്ല." },
+    { "type": "hook2",
+      "title": "ചോദിക്കാത്തത് *ഭയം* കൊണ്ടാണ്",
+      "body": "\"Pushy ആയി തോന്നുമോ?\" എന്ന പേടി. പക്ഷേ happy customer-ന് help ചെയ്യാൻ സന്തോഷമേ ഉള്ളൂ." },
+    { "type": "tip", "n": "01",
+      "title": "Win-ന് തൊട്ടുപിന്നാലെ *ചോദിക്കൂ*",
+      "body": "Customer \"super\" എന്ന് പറയുന്ന ദിവസം. Billing സമയത്തോ complaint-ന് ശേഷമോ അല്ല." },
+    { "type": "dodont",
+      "title": "ചോദിക്കേണ്ട രീതി",
+      "dont": "\"ആരെങ്കിലും ഉണ്ടെങ്കിൽ പറയണേ sir.\"",
+      "do": "\"നിങ്ങളെപ്പോലെ ഈ problem ഉള്ള ഒരാളെ അറിയാമോ? ഒരു intro മതി.\"" },
+    { "type": "chat", "title": "Forward ready ആക്കി *കൊടുക്കൂ*",
+      "initials": "RN", "name": "Rahul Nair", "sub": "Customer · Illustrative example",
+      "messages": [
+        { "out": true, "text": "Thanks Rahul! Forward ചെയ്യാൻ ഒരു ready message ഇതാ:", "t": "11:02" },
+        { "out": true, "text": "\"ഞങ്ങൾ ഇവരെ use ചെയ്യുന്നു, stock issue തീർന്നു. Anil-നെ നേരിട്ട് വിളിക്കൂ.\"", "t": "11:02" },
+        { "out": false, "text": "Done, 2 പേർക്ക് അയച്ചു.", "t": "11:20" }
+      ],
+      "caption": "Type ചെയ്യാനുള്ള പണി customer-ന് കൊടുക്കരുത്." },
+    { "type": "tip", "n": "02",
+      "title": "Thank-you loop *close* ചെയ്യൂ",
+      "body": "Referral വന്നാൽ ഉടനെ നന്ദി പറയൂ. Deal close ആയാൽ result-ഉം അറിയിക്കൂ. അടുത്ത referral അവിടെ നിന്നാണ്." },
+    { "type": "cheatsheet", "title": "Referral ചോദിക്കാൻ",
+      "items": [
+        "Win-ന്റെ ദിവസം ചോദിക്കൂ",
+        "Problem പറഞ്ഞ് ചോദിക്കൂ, \"ആരെങ്കിലും\" അല്ല",
+        "Ready-made WhatsApp forward കൊടുക്കൂ",
+        "Referral വന്നാൽ ഉടനെ നന്ദി",
+        "Result കൂടി അറിയിക്കൂ"
+      ] },
+    { "type": "cta", "title": "Referral request\n*message* വേണോ?",
+      "sub": "Copy ചെയ്ത് അയക്കാവുന്ന version.",
+      "pill": "DM \"playbook\"", "icon": "send" }
+  ],
+  "caption": "Happy customer ഉണ്ട്. Referral ചോദിച്ചിട്ടുണ്ടോ?\n\nReferral leads വേഗം close ആകും, പക്ഷേ ചോദിച്ചാൽ മാത്രം. Win-ന്റെ ദിവസം ചോദിക്കൂ, forward ചെയ്യാൻ ready message കൊടുക്കൂ.\n(Illustrative example.)\n\nReferral request message വേണോ? \"playbook\" എന്ന് DM ചെയ്യൂ.",
+  "hashtags": "#salestips #referrals #customerexperience #salesleadership #malayalam #salesmalayalam #keralabusiness #thesalesfalcon"
+}

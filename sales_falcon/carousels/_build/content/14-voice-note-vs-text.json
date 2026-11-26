@@ -1,0 +1,105 @@
+{
+  "slug": "14-voice-note-vs-text",
+  "ds": true,
+  "slides": [
+    {
+      "type": "hook",
+      "kicker": "WhatsApp selling",
+      "title": "Voice note അയക്കണോ,\n*text* അയക്കണോ?",
+      "sub": "രണ്ടിനും ഒരു സമയമുണ്ട്."
+    },
+    {
+      "type": "hook2",
+      "title": "Channel-ഉം *message* ആണ്",
+      "body": "Price ഒരു voice note-ൽ പറഞ്ഞാൽ customer-ന് പിന്നെ തിരയാൻ പറ്റില്ല. Sorry ഒരു text-ൽ പറഞ്ഞാൽ തണുത്തുപോകും."
+    },
+    {
+      "type": "split",
+      "title": "ഏത് എപ്പോൾ",
+      "beforeLabel": "Text",
+      "afterLabel": "Voice note",
+      "before": [
+        "Price, quotation, details",
+        "ആദ്യത്തെ contact",
+        "Date, time, address"
+      ],
+      "after": [
+        "Relationship build ചെയ്യാൻ",
+        "ഒരു കാര്യം explain ചെയ്യാൻ",
+        "Deal തിരിച്ചുപിടിക്കാൻ"
+      ],
+      "neutral": true,
+      "beforeIcon": "email",
+      "afterIcon": "phone"
+    },
+    {
+      "type": "tip",
+      "n": "01",
+      "title": "30 seconds *rule*",
+      "body": "Voice note 30 seconds-ൽ കൂടരുത്. കൂടുതൽ പറയാനുണ്ടെങ്കിൽ call ചെയ്യൂ."
+    },
+    {
+      "type": "steps",
+      "title": "3 voice note *mistakes*",
+      "items": [
+        {
+          "h": "2 മിനിറ്റ് നീളം",
+          "p": "ആരും മുഴുവൻ കേൾക്കില്ല."
+        },
+        {
+          "h": "Background noise",
+          "p": "Traffic-ലോ shop-ലോ ഇരുന്ന് record ചെയ്യരുത്."
+        },
+        {
+          "h": "Text summary ഇല്ല",
+          "p": "Voice note-ന് ശേഷം ഒരു line text: date, price, next step."
+        }
+      ]
+    },
+    {
+      "type": "chat",
+      "title": "ശരിയായ *combo*",
+      "initials": "PM",
+      "name": "Priya Menon",
+      "sub": "Customer · Illustrative example",
+      "kindLabel": "Chat",
+      "messages": [
+        {
+          "out": true,
+          "text": "[Voice note · 0:24] Delay-ക്ക് sorry പറഞ്ഞ്, പുതിയ plan explain ചെയ്യുന്നു.",
+          "t": "4:02"
+        },
+        {
+          "out": true,
+          "text": "Summary: delivery 12th, extra charge ഇല്ല. OK ആണോ?",
+          "t": "4:02"
+        },
+        {
+          "out": false,
+          "text": "OK, thanks!",
+          "t": "4:10"
+        }
+      ]
+    },
+    {
+      "type": "cheatsheet",
+      "title": "WhatsApp rule",
+      "items": [
+        "Numbers, details: text",
+        "Feelings, explaining: voice",
+        "Voice note 30 seconds-ൽ താഴെ",
+        "Quiet സ്ഥലത്ത് record ചെയ്യൂ",
+        "എപ്പോഴും ഒരു text summary"
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "നിങ്ങൾ *ഏതാണ്*\nprefer ചെയ്യുന്നത്?",
+      "sub": "Voice ആണോ text ആണോ? Comment ചെയ്യൂ.",
+      "pill": "Comment VOICE or TEXT",
+      "icon": "comment"
+    }
+  ],
+  "caption": "Voice note അയക്കണോ, text അയക്കണോ?\n\nNumbers-ഉം details-ഉം text-ൽ. Relationship-ഉം explaining-ഉം voice-ൽ. 30 seconds-ൽ താഴെ, എപ്പോഴും ഒരു text summary.\n(Illustrative example.)\n\nനിങ്ങൾ ഏതാണ് prefer ചെയ്യുന്നത്? \"voice\" or \"text\" എന്ന് comment ചെയ്യൂ.",
+  "hashtags": "#salestips #whatsappbusiness #communication #customerexperience #malayalam #salesmalayalam #keralabusiness #thesalesfalcon"
+}

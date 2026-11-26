@@ -1,0 +1,60 @@
+{
+  "slug": "15-gatekeeper",
+  "ds": true,
+  "slides": [
+    {
+      "type": "hook",
+      "kicker": "Prospecting",
+      "title": "\"Sir busy ആണ്,\n*പിന്നെ* വിളിക്കൂ.\"",
+      "sub": "Gatekeeper-നെ കടന്നുപോകാൻ 4 വഴികൾ."
+    },
+    {
+      "type": "hook2",
+      "title": "Gatekeeper ഒരു *wall* അല്ല",
+      "body": "Receptionist-ഉം PA-യും ആണ് boss-ന്റെ calendar നോക്കുന്നത്. അവരെ ally ആക്കിയാൽ വാതിൽ തുറക്കും."
+    },
+    {
+      "type": "tip",
+      "n": "01",
+      "title": "അവരുടെ *പേര്* ചോദിക്കൂ",
+      "body": "അടുത്ത call-ൽ ആ പേര് വിളിച്ച് തുടങ്ങൂ. \"Hello\" അല്ല, \"Hi Deepa\"."
+    },
+    {
+      "type": "dodont",
+      "title": "Call-ന്റെ *കാരണം* പറയൂ",
+      "dont": "\"Sir-നോട് ഒരു കാര്യം സംസാരിക്കാനാണ്.\"",
+      "do": "\"Last month-ലെ dispatch delay-യെ കുറിച്ച് 5 മിനിറ്റ് സംസാരിക്കാനാണ്.\""
+    },
+    {
+      "type": "dodont",
+      "title": "*Best time* ചോദിക്കൂ",
+      "dont": "\"Sir free ആണോ?\"",
+      "do": "\"Sir-നെ കിട്ടാൻ ഏറ്റവും നല്ല സമയം ഏതാണ്, Deepa?\""
+    },
+    {
+      "type": "tip",
+      "title": "അവരിലൂടെ *follow-up*",
+      "body": "\"Deepa പറഞ്ഞതുപോലെ Thursday വിളിക്കുന്നു.\" ഒരു ചെറിയ thank-you message-ഉം അയക്കൂ."
+    },
+    {
+      "type": "cheatsheet",
+      "title": "Gatekeeper playbook",
+      "items": [
+        "പേര് ചോദിച്ച്, ഓർത്തുവെക്കൂ",
+        "Specific കാരണം പറയൂ",
+        "\"Free ആണോ?\" അല്ല, \"best time?\"",
+        "അവരിലൂടെ follow-up",
+        "എപ്പോഴും respect"
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Gatekeeper\n*opener* വേണോ?",
+      "sub": "Call-ലും WhatsApp-ലും use ചെയ്യാവുന്ന lines.",
+      "pill": "DM \"playbook\"",
+      "icon": "send"
+    }
+  ],
+  "caption": "\"Sir busy ആണ്, പിന്നെ വിളിക്കൂ.\"\n\nGatekeeper നിങ്ങൾ വിചാരിക്കുന്നതിലും കൂടുതൽ decide ചെയ്യുന്നുണ്ട്. പേര് ചോദിക്കൂ, specific കാരണം പറയൂ, best time ചോദിക്കൂ.\n\nGatekeeper opener വേണോ? \"playbook\" എന്ന് DM ചെയ്യൂ.",
+  "hashtags": "#salestips #coldcalling #prospecting #b2bsales #malayalam #salesmalayalam #keralabusiness #thesalesfalcon"
+}

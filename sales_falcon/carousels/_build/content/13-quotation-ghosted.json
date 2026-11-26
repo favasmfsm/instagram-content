@@ -1,0 +1,73 @@
+{
+  "slug": "13-quotation-ghosted",
+  "ds": true,
+  "slides": [
+    {
+      "type": "hook",
+      "kicker": "Follow-up",
+      "title": "Quotation അയച്ചു.\nപിന്നെ *silence.*",
+      "sub": "\"Seen ആയോ sir?\" അയക്കും മുൻപ് ഇത് വായിക്കൂ."
+    },
+    {
+      "type": "hook2",
+      "title": "Silence ഒരു *No* അല്ല",
+      "body": "Customer busy ആണ്, മറന്നു, അല്ലെങ്കിൽ \"no\" പറയാൻ മടി. മൂന്നിനും പറ്റുന്ന ഒരു follow-up plan വേണം."
+    },
+    {
+      "type": "dodont",
+      "title": "Day 2: ഒരു *question*",
+      "dont": "\"Sir, quotation കണ്ടോ? Seen ആയല്ലോ.\"",
+      "do": "\"Installation date ആണോ budget ആണോ ഇപ്പോൾ decide ചെയ്യാനുള്ളത്?\""
+    },
+    {
+      "type": "tip",
+      "title": "Day 5: *value* കൊടുക്കൂ",
+      "body": "Pitch വേണ്ട. ഒരു useful കാര്യം: ഒരു similar customer-ന്റെ result, അല്ലെങ്കിൽ ഒരു checklist."
+    },
+    {
+      "type": "chat",
+      "title": "Day 10: *breakup* message",
+      "initials": "SK",
+      "name": "Suresh Kumar",
+      "sub": "Purchase · Illustrative example",
+      "messages": [
+        {
+          "out": true,
+          "text": "Suresh sir, ഇപ്പോൾ ഇത് priority അല്ലെന്ന് തോന്നുന്നു. ഈ file close ചെയ്യട്ടേ?",
+          "t": "10:15"
+        },
+        {
+          "out": false,
+          "text": "അയ്യോ close ചെയ്യല്ലേ! അടുത്ത ആഴ്ച MD-യുമായി discuss ചെയ്യാം.",
+          "t": "10:41"
+        }
+      ],
+      "caption": "\"No\" പറയാൻ എളുപ്പമാക്കിയാൽ reply വരും."
+    },
+    {
+      "type": "hook2",
+      "title": "എന്തുകൊണ്ട് *breakup* message?",
+      "body": "ഒരു വാതിൽ അടയുന്നു എന്ന് തോന്നുമ്പോഴാണ് ആളുകൾ react ചെയ്യുന്നത്. Yes ആയാലും no ആയാലും clarity കിട്ടും."
+    },
+    {
+      "type": "cheatsheet",
+      "title": "Quotation-ന് ശേഷം",
+      "items": [
+        "Day 2: ഒരു question",
+        "Day 5: ഒരു useful കാര്യം",
+        "Day 10: \"File close ചെയ്യട്ടേ?\"",
+        "\"Seen ആയോ?\" ഒരിക്കലും വേണ്ട",
+        "No കിട്ടിയാലും നന്ദി പറയൂ"
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Breakup message\n*template* വേണോ?",
+      "sub": "WhatsApp-ൽ നേരിട്ട് അയക്കാവുന്ന 3 versions.",
+      "pill": "DM \"playbook\"",
+      "icon": "send"
+    }
+  ],
+  "caption": "Quotation അയച്ചു. പിന്നെ silence.\n\nDay 2 ഒരു question, Day 5 ഒരു useful കാര്യം, Day 10 \"ഈ file close ചെയ്യട്ടേ?\" ഒരു polite \"No\" ഒരു silent \"Maybe\"-യേക്കാൾ നല്ലതാണ്.\n(Illustrative example.)\n\nBreakup message template വേണോ? \"playbook\" എന്ന് DM ചെയ്യൂ.",
+  "hashtags": "#salestips #followup #quotation #b2bsales #malayalam #salesmalayalam #keralabusiness #thesalesfalcon"
+}

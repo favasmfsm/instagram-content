@@ -1,0 +1,100 @@
+{
+  "slug": "19-existing-customer-upsell",
+  "ds": true,
+  "slides": [
+    {
+      "type": "hook",
+      "kicker": "Account growth",
+      "title": "ഏറ്റവും എളുപ്പമുള്ള sale\n*ഇപ്പോഴത്തെ customer*",
+      "small": true,
+      "sub": "Hunting മാത്രം നിർത്തൂ. Farming തുടങ്ങൂ."
+    },
+    {
+      "type": "split",
+      "title": "New vs *repeat* customer",
+      "beforeLabel": "New customer",
+      "afterLabel": "Repeat customer",
+      "before": [
+        "Trust zero-യിൽ നിന്ന്",
+        "Meetings, demos, follow-ups",
+        "ആഴ്ചകൾ എടുക്കും"
+      ],
+      "after": [
+        "Trust ഇപ്പോഴേ ഉണ്ട്",
+        "ഒരു call മതിയാകാം",
+        "ദിവസങ്ങൾക്കുള്ളിൽ"
+      ],
+      "neutral": true,
+      "beforeIcon": "person",
+      "afterIcon": "handshake"
+    },
+    {
+      "type": "tip",
+      "n": "01",
+      "title": "90-day *check-in* call",
+      "body": "Sell ചെയ്യാനല്ല. \"എങ്ങനെ പോകുന്നു? എന്തെങ്കിലും issue ഉണ്ടോ?\" എന്ന് മാത്രം."
+    },
+    {
+      "type": "call",
+      "title": "Next need *കണ്ടെത്തൂ*",
+      "bar": "Check-in call · Illustrative example",
+      "rows": [
+        {
+          "who": "You",
+          "rep": true,
+          "say": "3 മാസമായി. Billing software എങ്ങനെ പോകുന്നു?"
+        },
+        {
+          "who": "Customer",
+          "say": "Super. പക്ഷേ stock ഇപ്പോഴും Excel-ൽ ആണ്."
+        },
+        {
+          "who": "You",
+          "rep": true,
+          "say": "Stock-ഉം ഇതിൽ connect ചെയ്യാം. ഒരു 15 മിനിറ്റ് demo കാണിക്കട്ടേ?"
+        }
+      ],
+      "caption": "Customer തന്നെ next need പറയും. ചോദിച്ചാൽ മതി."
+    },
+    {
+      "type": "steps",
+      "title": "Cross-sell vs *upsell*",
+      "items": [
+        {
+          "h": "Cross-sell",
+          "p": "Billing വാങ്ങിയ ആൾക്ക് stock module."
+        },
+        {
+          "h": "Upsell",
+          "p": "3 users-ൽ നിന്ന് 10 users-ലേക്ക്."
+        }
+      ]
+    },
+    {
+      "type": "tip",
+      "n": "02",
+      "title": "Pushy *ആകരുത്*",
+      "body": "അവരുടെ problem-ൽ നിന്ന് തുടങ്ങൂ, നിങ്ങളുടെ target-ൽ നിന്നല്ല. Need ഇല്ലെങ്കിൽ \"ഇപ്പോൾ വേണ്ട\" എന്ന് പറയൂ."
+    },
+    {
+      "type": "cheatsheet",
+      "title": "Customer farming",
+      "items": [
+        "90 ദിവസത്തിൽ check-in",
+        "ആദ്യം issue ചോദിക്കൂ",
+        "Next need കേൾക്കൂ",
+        "Cross-sell അല്ലെങ്കിൽ upsell",
+        "Need ഇല്ലെങ്കിൽ push വേണ്ട"
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Customer check-in\n*script* വേണോ?",
+      "sub": "90-day call-ൽ ചോദിക്കേണ്ട 5 questions.",
+      "pill": "DM \"playbook\"",
+      "icon": "send"
+    }
+  ],
+  "caption": "ഏറ്റവും എളുപ്പമുള്ള sale ഇപ്പോഴത്തെ customer-ന്റേതാണ്.\n\nHunting മാത്രം നിർത്തൂ, farming തുടങ്ങൂ. 90-day check-in call ചെയ്യൂ, next need കേൾക്കൂ.\n(Illustrative example.)\n\nCustomer check-in script വേണോ? \"playbook\" എന്ന് DM ചെയ്യൂ.",
+  "hashtags": "#salestips #upsell #customerretention #accountmanagement #malayalam #salesmalayalam #keralabusiness #thesalesfalcon"
+}

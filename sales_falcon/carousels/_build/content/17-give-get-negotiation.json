@@ -1,0 +1,88 @@
+{
+  "slug": "17-give-get-negotiation",
+  "ds": true,
+  "slides": [
+    {
+      "type": "hook",
+      "kicker": "Negotiation",
+      "title": "ഒന്നും വാങ്ങാതെ\nഒന്നും *കൊടുക്കരുത്.*",
+      "sub": "Discount ചോദിച്ചാൽ ചെയ്യേണ്ടത്."
+    },
+    {
+      "type": "hook2",
+      "title": "Free discount ഒരു *signal* ആണ്",
+      "body": "വെറുതെ 10% കുറച്ചാൽ customer ചിന്തിക്കും: \"ഇനിയും കുറയും.\" അടുത്ത round ഉറപ്പാണ്."
+    },
+    {
+      "type": "tip",
+      "n": "01",
+      "title": "Give–get *rule*",
+      "body": "ഓരോ discount-നും പകരം ഒന്ന് ചോദിക്കൂ. അപ്പോൾ discount ഒരു trade ആകും, surrender അല്ല."
+    },
+    {
+      "type": "steps",
+      "title": "പകരം ചോദിക്കാവുന്ന *4 കാര്യങ്ങൾ*",
+      "items": [
+        {
+          "h": "Advance payment",
+          "p": "50% ഇപ്പോൾ."
+        },
+        {
+          "h": "Longer contract",
+          "p": "6 മാസം അല്ല, 12 മാസം."
+        },
+        {
+          "h": "Referral",
+          "p": "2 contacts-ന് ഒരു intro."
+        },
+        {
+          "h": "Case study",
+          "p": "Result share ചെയ്യാൻ permission."
+        }
+      ]
+    },
+    {
+      "type": "dodont",
+      "title": "എങ്ങനെ *പറയാം*",
+      "dont": "\"ശരി sir, 10% കുറയ്ക്കാം.\"",
+      "do": "\"10% ചെയ്യാം, 12 മാസത്തെ contract ആണെങ്കിൽ. OK ആണോ?\""
+    },
+    {
+      "type": "split",
+      "title": "Before / after",
+      "beforeLabel": "Before",
+      "afterLabel": "After",
+      "before": [
+        "Discount ചോദിച്ചു",
+        "10% കൊടുത്തു",
+        "അടുത്ത മാസം വീണ്ടും ചോദിച്ചു"
+      ],
+      "after": [
+        "Discount ചോദിച്ചു",
+        "Advance-ന് പകരം 5%",
+        "Cash flow-ഉം respect-ഉം കിട്ടി"
+      ],
+      "caption": "Illustrative example."
+    },
+    {
+      "type": "cheatsheet",
+      "title": "Discount ചോദിച്ചാൽ",
+      "items": [
+        "ഉടനെ yes പറയരുത്",
+        "പകരം എന്ത് എന്ന് ചോദിക്കൂ",
+        "Advance, contract, referral, case study",
+        "\"ആണെങ്കിൽ\" ചേർത്ത് പറയൂ",
+        "ഒരിക്കലും free ആയി കൊടുക്കരുത്"
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Give–get\n*scripts* വേണോ?",
+      "sub": "Discount ചോദിക്കുമ്പോൾ പറയാവുന്ന 6 lines.",
+      "pill": "DM \"playbook\"",
+      "icon": "send"
+    }
+  ],
+  "caption": "ഒന്നും വാങ്ങാതെ ഒന്നും കൊടുക്കരുത്.\n\nNegotiation ഒരു trade ആണ്, surrender അല്ല. Discount കൊടുക്കുമ്പോൾ advance, longer contract, referral, case study, ഇതിലൊന്ന് പകരം ചോദിക്കൂ.\n(Illustrative example.)\n\nGive–get scripts വേണോ? \"playbook\" എന്ന് DM ചെയ്യൂ.",
+  "hashtags": "#salestips #negotiation #pricing #b2bsales #malayalam #salesmalayalam #keralabusiness #thesalesfalcon"
+}
