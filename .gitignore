@@ -10,3 +10,6 @@ __pycache__/
 
 # temporary JPEGs made at posting time
 .build/
+
+# render scratch pages for sales_falcon slides
+sales_falcon/carousels/_build/.tmp/
